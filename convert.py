@@ -22,8 +22,8 @@ def convert_all_pdfs_in_folder(folder_path, output_folder):
             convert_pdf_to_jpg(pdf_path, output_folder)
 
 
-input_folder = '/Users/zhiruoli/Desktop/Forms/pdfs'
-output_folder = '/Users/zhiruoli/Desktop/Forms/images'
+# input_folder = '/Users/zhiruoli/Desktop/Forms/pdfs'
+# output_folder = '/Users/zhiruoli/Desktop/Forms/images'
 
 
-convert_all_pdfs_in_folder(input_folder, output_folder)
+# convert_all_pdfs_in_folder(input_folder, output_folder)
