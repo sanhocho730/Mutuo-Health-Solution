@@ -18,6 +18,6 @@ def local_image_to_data_url(image_path):
 
 
 # Example usage
-image_path = '/Users/mikewang/Desktop/Screenshot 2024-02-15 at 10.19.32 PM.png'
-data_url = local_image_to_data_url(image_path)
+# image_path = '/Users/mikewang/Desktop/Screenshot 2024-02-15 at 10.19.32 PM.png'
+# data_url = local_image_to_data_url(image_path)
 # print("Data URL:", data_url)
