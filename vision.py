@@ -1,11 +1,11 @@
 from openai import AzureOpenAI
 from dotenv import load_dotenv
 import json
-import pickle
 import os
 import glob
 from encode import local_image_to_data_url
 from convert import convert_all_pdfs_in_folder
+# import pickle
 
 load_dotenv(override=True)
 
@@ -13,8 +13,8 @@ AZURE_OPENAI_GPT4_DEPLOYMENT = os.getenv('AZURE_OPENAI_GPT4_DEPLOYMENT')
 
 azure_openai_client = AzureOpenAI()
 
-pdf_folder_path = '/Users/zhiruoli/Desktop/Forms/pdfs'
-image_folder_path = '/Users/zhiruoli/Desktop/Forms/images'
+pdf_folder_path = '/Users/mikewang/Desktop/Mutuo/forms/pdfs'
+image_folder_path = '/Users/mikewang/Desktop/Mutuo/forms/images'
 convert_all_pdfs_in_folder(pdf_folder_path, image_folder_path)
 
 image_paths = glob.glob(os.path.join(image_folder_path, '*.jpg'))
@@ -32,7 +32,10 @@ for image_path in image_paths:
             {
                 'role': 'user',
                 'content': [
-                    {'type': 'text', 'text': 'Extract the all text from the picture:'},
+                    {
+                        'type': 'text',
+                        'text': 'Extract the all and only questions(free fields, multiple choices, check boxes, etx) as text from the picture:',
+                    },
                     {
                         'type': 'image_url',
                         'image_url': {'url': data_url},
@@ -42,20 +45,21 @@ for image_path in image_paths:
         ],
     }
 
-    try:
-        with open(PICKLED_RESPONSE_FILE, 'rb') as fin:
-            response = pickle.load(fin)
-            # print(response)
-    except FileNotFoundError:
-        response = azure_openai_client.chat.completions.create(**kwargs)
-        with open(PICKLED_RESPONSE_FILE, 'wb') as fout:
-            pickle.dump(response, fout)
+    # try:
+    #     with open(PICKLED_RESPONSE_FILE, 'rb') as fin:
+    #         response = pickle.load(fin)
+    #         # print(response)
+    # except FileNotFoundError:
+    #     response = azure_openai_client.chat.completions.create(**kwargs)
+    #     with open(PICKLED_RESPONSE_FILE, 'wb') as fout:
+    #         pickle.dump(response, fout)
 
     # x = response.choices[0]
     # print(x.content_filter_results)
 
     # print(json.dumps(json.loads(response.model_dump_json()), indent=4))
 
+    response = azure_openai_client.chat.completions.create(**kwargs)
     response_json = json.loads(response.model_dump_json())
 
     # print(type(response.choices[0].message.content))
