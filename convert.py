@@ -20,10 +20,3 @@ def convert_all_pdfs_in_folder(folder_path, output_folder):
         if filename.endswith('.pdf'):
             pdf_path = os.path.join(folder_path, filename)
             convert_pdf_to_jpg(pdf_path, output_folder)
-
-
-
-input_folder = '/Users/mikewang/Desktop/Mutuo/forms/pdfs'
-output_folder = '/Users/mikewang/Desktop/Mutuo/forms/images'
-
-# convert_all_pdfs_in_folder(input_folder, output_folder)

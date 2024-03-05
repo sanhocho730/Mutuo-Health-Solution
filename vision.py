@@ -13,8 +13,8 @@ AZURE_OPENAI_GPT4_DEPLOYMENT = os.getenv('AZURE_OPENAI_GPT4_DEPLOYMENT')
 
 azure_openai_client = AzureOpenAI()
 
-pdf_folder_path = '/Users/mikewang/Desktop/Mutuo/forms/pdfs'
-image_folder_path = '/Users/mikewang/Desktop/Mutuo/forms/images'
+pdf_folder_path = '/Users/zhiruoli/Desktop/forms/pdfs'
+image_folder_path = '/Users/zhiruoli/Desktop/forms/images'
 convert_all_pdfs_in_folder(pdf_folder_path, image_folder_path)
 
 image_paths = glob.glob(os.path.join(image_folder_path, '*.jpg'))
@@ -34,7 +34,7 @@ for image_path in image_paths:
                 'content': [
                     {
                         'type': 'text',
-                        'text': 'Extract the all and only questions(free fields, multiple choices, check boxes, etx) as text from the picture:',
+                        'text': 'Extract the all and only questions(free fields, multiple choices, check boxes, etx) as text from the picture, then categorize these questions in to three groups by free text fields(priority), multiple choice, and yes/no(checkbox)',
                     },
                     {
                         'type': 'image_url',
