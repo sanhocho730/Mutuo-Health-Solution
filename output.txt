@@ -1,0 +1,416 @@
+<class 'str'>
+Free text fields(priority):
+- If yes, describe (under "Are you attaching any reports?")
+- This is your chance to tell us any other information or about any other issues that affect how you live with a disability. Here are some examples of what you might like to write about: (followed by a list of examples)
+
+Multiple choice:
+- (No multiple choice questions in the image)
+
+Yes/No (checkbox):
+- Are you attaching any reports? (Yes/No)
+<class 'str'>
+Free text fields (priority):
+- What is or was your job (the name of your job or what you did)?
+- When did you start?
+- When did you stop?
+- Why did this job end (e.g., seasonal, health reasons, laid off, got a new job etc.)?
+- If yes, describe (for the question "Do you need support from an employer in order to work?")
+- If yes, describe (for the question "Have you used any employment services?")
+- If yes, describe (for the question "Have you ever been in a special education program or had your disability accommodated at school?")
+- If yes, describe (for the question "Have you taken other classes or training?")
+- How has your disability affected your education or training?
+
+Multiple choice:
+- Employment Type (Full time, Part time, Casual or seasonal)
+- What is your highest degree or level of school completed? (Some elementary school up to grade 6, Elementary school up to 8th grade, Some high school, no diploma, High school graduate, diploma or the equivalent, Some post-secondary, College or university, Trade, technical or vocational training, I don't know my highest level of education, I never went to school)
+
+Yes/No (checkbox):
+- Have you worked in the last five years? (Yes, No)
+- Do you need support from an employer in order to work? (Yes, No)
+- Have you used any employment services? (Yes, No)
+- Have you ever been in a special education program or had your disability accommodated at school? (Yes, No)
+- Have you taken other classes or training? (Yes, No)
+<class 'str'>
+Free text fields(priority):
+- Please tell us about how your disability affects you.
+
+Multiple choice:
+- None
+
+Yes/No (checkbox):
+- None
+<class 'str'>
+Free text fields:
+- Please tell us about any services, supports or aids that help you with your disability.
+- I need special services or supports but I am not using them because: Describe
+- I use an assistive device like a cane, a wheelchair, hearing aid, visual and communication aids, etc. Describe
+- I use support services from an agency, such as developmental services, respite care, community mental health, counselling, caseworker, social work, personal support, home care, meal delivery, transportation, etc. Describe
+- I get help from another person like a family member or a friend. Describe in table below.
+- I use a service animal. Describe how your service animal helps you
+- I use another kind of aid or support. Describe
+- How has your disability affected your job or ability to work?
+
+Multiple choice:
+- None
+
+Yes/No (checkbox):
+- I do not need any special services or supports
+- I need special services or supports but I am not using them because: 
+- I use an assistive device like a cane, a wheelchair, hearing aid, visual and communication aids, etc.
+- I use support services from an agency, such as developmental services, respite care, community mental health, counselling, caseworker, social work, personal support, home care, meal delivery, transportation, etc.
+- I get help from another person like a family member or a friend.
+- I use a service animal.
+- I use another kind of aid or support.
+<class 'str'>
+Free text fields:
+- Name of item
+- What you need to know
+
+Multiple choice:
+- None
+
+Yes/No (checkbox):
+- None
+<class 'str'>
+There are no questions in the provided text.
+<class 'str'>
+Free Text Fields:
+- Member ID
+- Referral ID
+- Date of Birth (dd-mm-yyyy)
+- Last Name
+- First Name
+- Middle Initial
+- Address (Unit Number, Street Number, Street Name)
+- City/Town
+- Province
+- Postal Code
+
+Multiple Choice:
+- None
+
+Yes/No (Checkbox):
+- None
+<class 'str'>
+Free text fields:
+- "Who do I contact if I have any questions?"
+- "How do I receive payment for completing these forms?"
+- "How much time does my patient have to complete their Disability Determination Package?"
+
+Multiple choice:
+- None
+
+Yes/No (checkbox):
+- None
+<class 'str'>
+Free text fields:
+- City/Town
+- Telephone Number
+- TTY (Teletypewriter)
+- Member ID
+- Referral ID
+- Date of Birth (dd-mm-yyyy)
+- Last Name
+- First Name
+- Middle Initial
+- Unit Number
+- Street Number
+- Street Name
+- City/Town
+- Province
+- Postal Code
+
+Multiple choice:
+- None
+
+Yes/No (checkbox):
+- None
+<class 'str'>
+Free text fields:
+- Medical Condition
+- Impairment(s)
+- Restriction(s)
+
+Multiple choice:
+- Prognosis - condition is likely to: improve, remain same, deteriorate, unknown
+- Expected to last: less than 1 year, 1 year or more
+- And is: recurrent/episodic, continuous
+
+Yes/No (checkbox):
+None in the image provided.
+<class 'str'>
+Free text fields (priority):
+- Medical Condition
+- Impairment
+- Duration
+- Restriction
+
+Multiple choice:
+- Prognosis - condition is likely to: improve, remain same, deteriorate, unknown
+- Expected to last: less than 1 year, 1 year or more
+- And is: recurrent/episodic, continuous
+
+Yes/No (checkbox):
+- None in the image provided.
+<class 'str'>
+Free text fields (priority):
+- 3.1 How long have you known the applicant?
+- 3.2 How often do you see the applicant for the conditions and/or impairments listed in Section 1?
+- 3.3 Please describe available information, if applicable.
+- For recurrent or episodic impairments listed, describe how fluctuations in severity level affect the patient
+- Describe relevant findings or attach copies of the available report
+- If no, comment (e.g., pending or waiting list, not available)
+
+Multiple choice:
+- 3.3 If relevant to any of the conditions or impairments listed in section 1, state the applicant's Height, Weight, Body Mass Index (BMI), Other (i.e., blood pressure)
+- 3.4 If Yes, select type. (Diagnostic test or investigation, Specialist consults, Other assessments or reports)
+
+Yes/No (checkbox):
+- 3.4 Have any consultations or assessments been completed by another health care professional? Yes / No
+<class 'str'>
+Free text fields (priority):
+- Date of Diagnosis (if known) (dd-mm-yyyy)
+- Most Recent Assessment Date (dd-mm-yyyy)
+- If yes, describe (4.2)
+- If yes, describe (4.3)
+- What type is the hearing loss? (5.1)
+- If yes, describe (5.2)
+- If yes, describe (5.3)
+- If yes, describe (5.4)
+
+Multiple choice:
+- Unilateral/Bilateral (5.1)
+
+Yes/No (checkbox):
+- See attached report (4.1)
+- Yes/No (4.2)
+- Yes/No (4.3)
+- Yes/No (5.2)
+- Yes/No (5.3)
+- Yes/No (5.4)
+<class 'str'>
+Free text fields (priority):
+- For episodic symptoms describe how fluctuations in severity level affect the patient
+
+Multiple choice:
+- Appetite Change: Increase / Decrease
+- Energy Change: Increase / Decrease
+- Memory deficit: Long term memory / Short term memory / Working Memory
+- Psychomotor retardation: Agitation / Retardation
+- Sleep dysfunction: Difficulty sleeping / Excessive Sleeping
+- Suicidality: Ideation/Thoughts / Plans / Attempts
+
+Yes/No (checkbox):
+- Amotivation
+- Anxiety
+- Attention deficit
+- Comprehension deficit
+- Concentration deficit
+- Delusions
+- Depressive mood
+- Disinhibition
+- Disorientation (person, place or time)
+- Dissociative symptoms
+- Emotional dysregulation
+- Executive function deficits (e.g., self-regulation, planning and organization)
+- Grandiosity
+- Hallucination
+- Impulse control deficit
+- Insight deficit
+- Judgement deficit
+- Learning deficits (specify)
+- Speech deficit (not due to language barrier) (specify)
+- Thought disorganization
+- Withdrawn
+<class 'str'>
+Free text fields:
+- If you answered "Yes" to any of the above, and there is additional information that might be useful in understanding the applicant's mental or cognitive impairments please describe or attach copies of available reports (e.g., psychology, psychiatry, educational assessment, individual education plan, neuropsychological assessment, other mental health consult).
+- Relevant additional information may include: History, interventions, access to treatment, services, housing, homelessness, etc. that might be useful to understand the presenting impairments and their impact.
+
+Multiple choice:
+- Are any of the medical conditions reported in section 1 listed below?
+  - Mental health condition
+  - Substance-related or addictive disorder
+  - Neurodevelopmental disorder (e.g., intellectual disability, autism spectrum disorder, developmental delay, specific learning disability, attention-deficit/hyperactivity disorder, Fetal Alcohol Spectrum Disorder
+  - Other medical condition presenting with a mental or cognitive impairment (e.g., traumatic brain injury, stroke, seizure disorder)
+
+Yes/No (checkbox):
+- Yes
+- No
+
+Checkbox:
+- See attached reports
+<class 'str'>
+Free text fields (priority):
+- Dosage
+- Frequency
+- Start Date (dd-mm-yyyy)
+- List Conditions or Impairments Being Treated
+- Start Date (dd-mm-yyyy)
+- End Date (dd-mm-yyyy)
+- Describe Response to Treatment or
+- If no, comment (e.g., pending, side effects, no definitive diagnosis, not available, poor insight)
+- Describe any relevant past treatment and reason for discontinuation (e.g., remission, failed treatment, change in treatment, side effects)
+- Provide any other information that might be useful in understanding the applicant's current situation
+
+Multiple choice:
+- Other rehabilitation (specify)
+- Other (e.g., Indigenous Healer)
+
+Yes/No (checkbox):
+- Attach Report
+<class 'str'>
+Free text fields:
+- Name of My Health Care Professional
+- Address of My Health Care Professional
+- Unit Number
+- Street Number
+- Street Name
+- City/Town
+- Province
+- Telephone Number
+- PO Box
+- Postal Code
+
+Multiple choice:
+- None
+
+Yes/No (checkbox):
+- I give my consent voluntarily. I understand that I can refuse to give my consent but this may affect my eligibility for ODSP.
+<class 'str'>
+Free text fields (priority):
+- If yes, describe (5.5)
+- If yes, describe (5.6)
+- If yes, describe (5.7)
+- If no, describe (5.8)
+- Admission, Emergency Room Visit, Surgery (6.1)
+- Date of Visit (6.1)
+- Duration (6.1)
+- Describe Purpose or Attach Admission/Discharge Report (6.1)
+- Attach Report (6.1)
+- Pharmacotherapy (6.1)
+- Dosage (6.1)
+- Frequency (6.1)
+- Start Date (6.1)
+- List Conditions or Impairments Being Treated (6.1)
+
+Multiple choice:
+- None
+
+Yes/No (checkbox):
+- Are there safety concerns related to hearing (e.g., unable to localize sound of approaching vehicles)? (5.5)
+- Does the applicant have a constant/annoying ringing (tinnitus) in ears? (5.6)
+- Does the applicant wear hearing aids? (5.7)
+- With the hearing aid(s), could or can the applicant function within normal limits? (5.8)
+- Is the applicant receiving any intervention and treatment for conditions and impairments listed in section 1? (6.1)
+<class 'str'>
+Free text fields (priority):
+- Describe (Assistive Device or Equipment)
+- Describe (Support Service or Resource)
+- Describe (Service or guide animal)
+- If yes, describe (additional comments/information about activities of daily living)
+- Last Name, First Name
+- Profession
+- Professional Regulatory College
+- Registration Number
+- Office Address (Unit/Suite Number, Street Number and Name)
+- City/Town
+- Province
+- Postal Code
+- Telephone Number
+- Fax Number
+- Office Email (optional)
+
+Multiple choice:
+- None
+
+Yes/No (checkbox):
+- Yes/No (additional comments/information about activities of daily living)
+<class 'str'>
+Free text fields (priority):
+- Describe limitation, if needed
+
+Multiple choice:
+- Please rate the limitation for each activity:
+  1. Bladder control
+  2. Bowel control
+  3. Bathing and self-cleaning
+  4. Grooming (hair, face teeth, hands and nails)
+  5. Dressing (including buttons, clasps, zips, shoe laces)
+  6. Select clothes for weather and situation
+  7. Meal Preparation
+  8. Eating: using utensils
+  9. Shopping for groceries
+  10. Housekeeping
+  11. Laundry
+  12. Physical activity: ability to participate in sustained activities and physical strength commensurate with person's age
+  13. Mobility: walking, getting around
+  14. Sitting
+  15. Standing
+  16. Stair climbing
+  17. Transferring: in and out of bed; on and off toilet
+  18. Transportation: ability to use available means of transportation
+  19. Attending medical appointments
+  20. Managing finances: ability to manage own money
+  21. Managing medication (if applicable)
+  22. Communication using phone, text, email etc.
+  23. Cognitive based activities (i.e., reading, writing, understand or following simple instructions)
+  24. Safety: ability to maintain personal safety
+  25. Social interactions (get along with others, maintains social boundaries)
+  26. Hobbies/taking part in activities for relaxation or pleasure
+
+Yes/No (checkbox):
+- DK (Don't know) option for each activity listed under multiple choice.
+<class 'str'>
+Free text fields:
+- Last Name, First Name
+- Profession
+- Professional Regulatory College
+- Registration Number
+- Address
+- Unit/Suite Number
+- Street Number and Name
+- City/Town
+- Province
+- Postal Code
+- Telephone Number
+- Fax Number
+- Office Email (optional)
+
+Multiple choice:
+- None
+
+Yes/No (checkbox):
+- I confirm that the information I have provided is true in my professional opinion.
+<class 'str'>
+Free Text Fields (Priority):
+- Member ID
+- Referral ID
+- Date of Birth (dd-mm-yyyy)
+- Last Name
+- First Name
+- Middle Initial
+- Current Address (Unit Number, Street Number, Street Name)
+- City/Town
+- Province
+- Postal Code
+- Additional Comments/Information (optional)
+
+Multiple Choice:
+- None
+
+Yes/No (Checkbox):
+- Is the ADL section being completed by the same health care professional who completed the HSR? (Yes/No)
+<class 'str'>
+Free text fields:
+- If the person applying did not complete the form, would you like to tell us why?
+
+Multiple choice:
+- The form was completed by:
+  - the person applying for ODSP
+  - someone else
+
+Yes/No (checkbox):
+- By signing this form I agree that the statements in this document are true.
+<class 'str'>
+There are no questions in the provided picture. It contains only information and instructions for health care professionals regarding the Ontario Disability Support Program application process.

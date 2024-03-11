@@ -1,0 +1,81 @@
+Treatment
+If hospitalized, name of the hospital/institution: N/A from N/A to N/A
+Surgery
+☒ Yes ☐ No (If yes, state surgical procedure) Carpal Tunnel Release Surgery
+☐ Performed ☒ Planned Date of Surgery: 04/10/2024 Anesthetic ☐ Local ☒ General
+List medications currently prescribed and dosage: N/A
+Therapy
+☒ Yes ☐ No If yes, indicate type (e.g. physiotherapy, psychotherapy, etc.) Physical Therapy
+Frequency ☐ Daily _______ x per week ☒ Other: Post-surgery
+Location: ☒ Outpatient ☐ Therapist’s Office ☐ Physician’s Office ☐ Home
+Summary of patient’s response to treatment: No significant improvement with conservative treatments, considering surgical intervention.
+
+Prognosis
+Have you discussed a Return to Work Plan with your patient? ☒ Yes ☐ No
+If no, why not? N/A
+If yes, please provide details about the Return to Work Plan including recommendations for modified hours and/or modified duties: Advise patient on seeking workplace modifications to reduce strain on the wrist post-recovery.
+Expected date of Return to Work Full-Time: N/A Next appointment: 2 weeks post-surgery
+Employee Name: Jane Smith
+
+If employee cannot return to full duties, can the employee return to work on modified duties: Yes No Date: N/A
+
+If yes, please describe the employee's current limitations (please use the abilities section if applicable) If NO, please provide the medical contraindications to a modified return to work: N/A
+
+Expected length of time modifications will be required: N/A
+
+Is this injury or illness work related: Yes No Has a Form 8 been submitted to WSIB? Yes No
+
+If disability is related to pregnancy, please indicate the expected date of delivery Day Month Year: N/A
+
+I see the patient every (day, week, etc.) Date of most recent examination Day Month Year: N/A
+
+Has patient ever had a similar condition? Yes No If yes, state when and describe: N/A
+
+FUNCTIONAL ABILITIES:
+Walking (continuously): No restriction
+Standing (continuously): No restriction
+Sitting (continuously): No restriction
+Lifting floor to waist: Up to 5 lbs
+Lifting waist to shoulder: Up to 5 lbs
+Stair climbing: no restriction
+Able to drive: No restriction
+Able to operate heavy machinery: N/A
+
+Employee is: Right handed
+Limited ability to used left hand to: N/A
+Limited ability to used right hand to: hold objects; grip; type; Write
+Completely unable to use left hand to: N/A
+Completely unable to use right hand to: N/A
+Hours per day: Full Hours Partial Hours (specify) anticipated duration no restriction
+
+COGNITIVE ABILITIES:
+Deadline Pressures: No restriction
+Attention: No restriction
+Memory: No restriction
+Reasoning: No restriction
+Problem Solving: No restriction
+Other clinically assessed limitations: N/A
+
+If Nature of condition is Psychological/Mental Health, please advise if criteria for ICD -10- CM/ DSM 5 was evaluated: Yes No
+Employee's Name: Jane Smith
+Address: N/A
+Date of Birth: 06/25/1982
+Language: N/A
+I have access to a printer and am able to print all required medical forms: N/A
+Email Address: N/A
+Check ONE: N/A
+Were you hospitalized? No
+If YES, name of the hospital/institution: N/A
+Are you claiming or receiving any other disability, wage loss and/or retirement benefits (e.g. WSIB, CPP/QPP, auto insurance, other)? N/A
+Are you working or volunteering in any capacity? Yes
+Are you receiving wages from any source? Yes
+Are you attending any educational course, program or institution? No
+If yes to any of the above, please provide details of these items on a separate page and include any confirming documents, claim numbers, etc.: N/A
+If an accident caused your disability, indicate date WHERE and WHAT happened: N/A
+
+Nature of the illness or injury: Severe Carpal Tunnel Syndrome
+Date illness or injury began: Approximately six months ago
+Date of examination by Physician: 03/04/2024
+Date deemed totally disabled from work: N/A
+Is there a medical treatment plan currently in place? Yes
+Is the employee compliant with the prescribed/recommended treatment plan? Yes
