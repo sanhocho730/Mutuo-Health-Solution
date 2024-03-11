@@ -218,7 +218,7 @@ unanswered_questions = list_unanswered_questions(
 )
 
 
-file_path = '/Users/isanho/Desktop/autoscribe_forms/unanswered_questions.txt'
+file_path = '/Users/isanho/Desktop/autoscribe_forms_main/unanswered_questions.txt'
 
 with open(file_path, 'w', encoding='utf-8') as file:
     file.write('Follow-up Needed for Unanswered Questions:\n')

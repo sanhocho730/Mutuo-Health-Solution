@@ -1,0 +1,15 @@
+Follow-up Needed for Unanswered Questions:
+Question: <class 'str'>
+If hospitalized, name of the hospital/institution ______________ from ________ to ________
+□ Yes □ No (If yes, state surgical procedure) _______________________________________
+□ Performed □ Planned Date of Surgery ______________ Anesthetic □ Local □ General
+List medications currently prescribed and dosage _______________________________________
+□ Yes □ No If yes, indicate type (e.g. physiotherapy, psychotherapy, etc.) ________________
+Frequency □ Daily _______ x per week □ Other ___________________________________
+Location: □ Outpatient □ Therapist’s Office □ Physician’s Office □ Home
+Summary of patient’s response to treatment ___________________________________________
+Have you discussed a Return to Work Plan with your patient? □ Yes □ No
+If no, why not? __________________________________________________________________
+If yes, please provide details about the Return to Work Plan including recommendations for modified hours and/or modified duties: _________________________________________________________
+______________________________________________________________________________
+Expected date of Return to Work Full-Time __________ Next appointment __________
