@@ -12,28 +12,25 @@ import os
 # from scipy import spatial  # for calculating vector similarities for search
 
 
-def list_unanswered_questions(query, response_text):
-    # Split the query and response into lines for easier processing
-    query_lines = query.split('\n')
-    response_lines = response_text.split('\n')
+def get_unanswered_questions(query, answered_text):
+    """
+    Uses GPT to identify unanswered questions from the initial response.
+    """
+    # Formulate a new prompt asking GPT to list unanswered questions.
+    conversation = [
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": f"Given the initial query:\n\n{query}\n\nAnd the response:\n\n{answered_text}\n\nList any questions that were not answered:"}
+    ]
 
-    unanswered_questions = []
+    # Make a new request to GPT with the updated prompt
+    response = client.chat.completions.create(
+        model=AZURE_OPENAI_TURBO_DEPLOYMENT,  # Ensure this variable is correctly defined
+        messages=conversation,
+        temperature=0
+    )
 
-    for line in query_lines:
-        if line.startswith('Question:') or '□' in line or '__' in line:
-            question = line.strip()
-
-            # Check if the question appears in the response with an answer other than N/A
-            answered = any(
-                question in response_line and 'N/A' not in response_line
-                for response_line in response_lines
-            )
-
-            # If the question does not seem to be answered, add it to the list
-            if not answered:
-                unanswered_questions.append(question)
-
-    return unanswered_questions
+    unanswered_questions_text = response.choices[0].message.content  # Adjust based on actual response structure
+    return unanswered_questions_text
 
 # models
 EMBEDDING_MODEL = 'text-embedding-ada-002'
@@ -208,22 +205,22 @@ response = client.chat.completions.create(
     temperature=0,
 )
 
-print(response.choices[0].message.content)
+answered_text = response.choices[0].message.content
+print("GPT's initial response:")
+print(answered_text)
+
+# Use GPT to list unanswered questions
+unanswered_questions_text = get_unanswered_questions(query, answered_text)
+print("\nUnanswered questions as identified by GPT:")
+print(unanswered_questions_text)
 
 
-
-# Assuming 'query' is your original query string and 'response_text' is the text received from GPT
-unanswered_questions = list_unanswered_questions(
-    query, response.choices[0].message.content
-)
-
-
+# Save the unanswered questions to a file
 file_path = '/Users/isanho/Desktop/autoscribe_forms_main/unanswered_questions.txt'
 
 with open(file_path, 'w', encoding='utf-8') as file:
-    file.write('Follow-up Needed for Unanswered Questions:\n')
-    for question in unanswered_questions:
-        file.write(question + '\n')
+    file.write('Follow-up Needed for Unanswered Questions:\n\n')
+    file.write(unanswered_questions_text)
 
-print(f'Unanswered questions have been saved to {file_path}')
+print(f'\nUnanswered questions have been saved to {file_path}')
 
