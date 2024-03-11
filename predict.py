@@ -19,7 +19,7 @@ def get_unanswered_questions(query, answered_text):
     # Formulate a new prompt asking GPT to list unanswered questions.
     conversation = [
         {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": f"Given the initial query:\n\n{query}\n\nAnd the response:\n\n{answered_text}\n\nList any questions that were not answered:"}
+        {"role": "user", "content": f"Given the initial query:\n\n{query}\n\nAnd the response:\n\n{answered_text}\n\nList any questions that were not answered, preserving the original format of each question."}
     ]
 
     # Make a new request to GPT with the updated prompt

@@ -1,24 +1,43 @@
 Follow-up Needed for Unanswered Questions:
 
-The following questions were not answered due to lack of information in the article:
+If employee cannot return to full duties, can the employee return to work on modified duties: Yes No Date
 
-1. If hospitalized, name of the hospital/institution from ________ to ________
-2. List medications currently prescribed and dosage
-3. Expected date of Return to Work Full-Time
-4. If employee cannot return to full duties, can the employee return to work on modified duties: Yes No Date
-5. If yes, please describe the employee's current limitations (please use the abilities section if applicable) If NO, please provide the medical contraindications to a modified return to work
-6. Expected length of time modifications will be required
-7. Is this injury or illness work related: Yes No Has a Form 8 been submitted to WSIB? Yes No
-8. If disability is related to pregnancy, please indicate the expected date of delivery Day Month Year
-9. I see the patient every (day, week, etc.) Date of most recent examination Day Month Year
-10. Able to operate heavy machinery: Up to 2 hours Up to 4 hours No restriction Other
-11. Address
-12. Language
-13. I have access to a printer and am able to print all required medical forms
-14. Email Address
-15. Check ONE
-16. Are you claiming or receiving any other disability, wage loss and/or retirement benefits (e.g. WSIB, CPP/QPP, auto insurance, other)?
-17. If yes to any of the above, please provide details of these items on a separate page and include any confirming documents, claim numbers, etc.
-18. If an accident caused your disability, indicate date WHERE and WHAT happened
-19. Date deemed totally disabled from work
-20. If Nature of condition is Psychological/Mental Health, please advise if criteria for ICD -10- CM/ DSM 5 was evaluated.
+If yes, please describe the employee's current limitations (please use the abilities section if applicable) If NO, please provide the medical contraindications to a modified return to work:
+
+Expected length of time modifications will be required:
+
+Is this injury or illness work related: Yes No Has a Form 8 been submitted to WSIB? Yes No
+
+If disability is related to pregnancy, please indicate the expected date of delivery Day Month Year
+
+I see the patient every (day, week, etc.) Date of most recent examination Day Month Year
+
+Has patient ever had a similar condition? Yes No If yes, state when and describe:
+
+Hours per day: Full Hours Partial Hours (specify) anticipated duration no restriction
+
+If Nature of condition is Psychological/Mental Health, please advise if criteria for ICD -10- CM/ DSM 5 was evaluated: Yes No
+
+Address
+
+Language
+
+I have access to a printer and am able to print all required medical forms
+
+Email Address:
+
+Check ONE
+
+Are you claiming or receiving any other disability, wage loss and/or retirement benefits (e.g. WSIB, CPP/QPP, auto insurance, other)?
+
+Are you working or volunteering in any capacity?
+
+Are you receiving wages from any source?
+
+Are you attending any educational course, program or institution?
+
+If yes to any of the above, please provide details of these items on a separate page and include any confirming documents, claim numbers, etc.
+
+If an accident caused your disability, indicate date WHERE and WHAT happened:
+
+Date deemed totally disabled from work:
