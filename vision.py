@@ -99,26 +99,41 @@ class OpenAILibrary:
 
 
 def main(pdf_path, output_folder):
+    # Initialize the PDF object and OpenAI library instance
     pdf = PDFObject(pdf_path)
-    pdf.save_image_repr_to_directory(output_folder)
-
     openai_lib = OpenAILibrary()
 
-    PICKLED_RESPONSE_FILE = 'pickled_response.bin'
-    try:
-        with open(PICKLED_RESPONSE_FILE, 'rb') as fin:
-            response = pickle.load(fin)
-    except FileNotFoundError:
-        response = openai_lib.generate_response(
-            'Extract the all and only questions(free fields, multiple choices, check boxes, etx) as text from the picture, and generate a form with the first column as the question and the second column as the pixel location of the answer field of the question in the picture.',
-            pdf.get_dataurl_encoding(0),
-        )
-        with open(PICKLED_RESPONSE_FILE, 'wb') as fout:
-            pickle.dump(response, fout)
+    # Convert and save all PDF pages as images in the specified directory
+    pdf.save_image_repr_to_directory(output_folder)
 
-    print(type(response.choices[0].message.content))
-    print(response.choices[0].message.content)
+    # Iterate over all pages of the PDF
+    for page_number in range(len(pdf._images)):
+        # Get the data URL encoding for the current page
+        data_url = pdf.get_dataurl_encoding(page_number)
 
+        # Formulate the prompt for the current page
+        prompt = 'Extract all and only questions (free fields, multiple choices, checkboxes, etc.) as text from the picture, and generate a form with the first column as the question and the second column as the pixel location of the answer field of the question in the picture.'
+
+        # Generate response using OpenAI based on the current page's content
+        try:
+            # Check if a cached response exists
+            pickled_response_file = f'pickled_response_page_{page_number+1}.bin'
+            if os.path.exists(pickled_response_file):
+                with open(pickled_response_file, 'rb') as fin:
+                    response = pickle.load(fin)
+            else:
+                # If no cached response, send a new request and save it
+                response = openai_lib.generate_response(prompt, data_url)
+                with open(pickled_response_file, 'wb') as fout:
+                    pickle.dump(response, fout)
+
+            # Process and display the response (example below may need adjustment)
+            print(f"Page {page_number+1}:")
+            print(type(response.choices[0].message.content))
+            print(response.choices[0].message.content)
+
+        except Exception as e:
+            print(f"Error processing page {page_number+1}: {e}")
 
 # python vison.py test.py output
 if __name__ == '__main__':
