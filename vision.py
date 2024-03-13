@@ -1,12 +1,15 @@
 from dotenv import load_dotenv
 from openai import AzureOpenAI
 from pdf2image import convert_from_path
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
 
 import argparse
 import base64
 import io
 import os
 import pickle
+
 
 
 class PDFObject:
@@ -53,7 +56,7 @@ class PDFObject:
 
 class OpenAILibrary:
     """OpenAI library functions used in this project."""
-
+    
     def __init__(
         self, model='AZURE_OPENAI_GPT4_DEPLOYMENT', temperature=0, max_tokens=2000
     ):
@@ -105,14 +108,18 @@ def main(pdf_path, output_folder):
 
     # Convert and save all PDF pages as images in the specified directory
     pdf.save_image_repr_to_directory(output_folder)
+    all_questions_and_locations = []
 
     # Iterate over all pages of the PDF
     for page_number in range(len(pdf._images)):
         # Get the data URL encoding for the current page
         data_url = pdf.get_dataurl_encoding(page_number)
-
         # Formulate the prompt for the current page
-        prompt = 'Extract all and only questions (free fields, multiple choices, checkboxes, etc.) as text from the picture, and generate a form with the first column as the question and the second column as the pixel location of the answer field of the question in the picture.'
+        prompt = '''Given the form content, identify and categorize all items as either free field questions, checkbox questions, or multiple-choice questions. For each item, provide the question text and specify the central pixel location of the answer field. Use the following format:
+- For free field questions: "Question text | Central pixel location: (x, y)"
+- For checkbox questions: "Question text | Checkbox options with pixel locations: ☐ Option 1 (x1, y1), ☐ Option 2 (x2, y2), ..."
+- For multiple-choice questions: "Question text | Choice options with pixel locations: Choice A (xA, yA), Choice B (xB, yB), ..."
+Ensure accuracy in identifying the pixel location of the answer field for each type of question, facilitating precise interaction with the form in a digital environment.'''
 
         # Generate response using OpenAI based on the current page's content
         try:
@@ -132,8 +139,13 @@ def main(pdf_path, output_folder):
             print(type(response.choices[0].message.content))
             print(response.choices[0].message.content)
 
+            extracted_data = response.choices[0].message.content  # Assume this returns a dict-like object
+
         except Exception as e:
             print(f"Error processing page {page_number+1}: {e}")
+    
+    output_pdf_path = os.path.join(output_folder, "formatted_questions.pdf")
+
 
 # python vison.py test.py output
 if __name__ == '__main__':
