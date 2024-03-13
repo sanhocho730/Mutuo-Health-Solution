@@ -139,7 +139,11 @@ Ensure accuracy in identifying the pixel location of the answer field for each t
             print(type(response.choices[0].message.content))
             print(response.choices[0].message.content)
 
-            extracted_data = response.choices[0].message.content  # Assume this returns a dict-like object
+            response_text_file = f'{output_folder}/response_page_{page_number+1}.txt'
+            with open(response_text_file, 'w', encoding='utf-8') as file:
+                file.write(response.choices[0].message.content)
+        
+            print(f"Response for page {page_number+1} saved to {response_text_file}")
 
         except Exception as e:
             print(f"Error processing page {page_number+1}: {e}")
