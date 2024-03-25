@@ -149,7 +149,7 @@ response = client.chat.completions.create(
 
 answered_text = response.choices[0].message.content
 print("GPT's initial response:")
-print(answered_text)
+#print(answered_text)
 
 # Use GPT to list unanswered questions
 unanswered_questions_text = get_unanswered_questions(query, answered_text)

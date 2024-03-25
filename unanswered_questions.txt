@@ -46,5 +46,7 @@ Follow-up Needed for Unanswered Questions:
   - "Reasoning: | Checkbox options with pixel locations: ☐ limited capacity (180, 700), ☐ Unable to perform (300, 700), ☐ no restriction (420, 700), ☐ Other (540, 700)"
   - "Problem Solving: | Checkbox options with pixel locations: ☐ limited capacity (180, 730), ☐ Unable to perform (300, 730), ☐ no restriction (420, 730), ☐ Other (540, 730)"
 
+
+
 - Multiple-choice questions:
   - "FUNCTIONAL ABILITIES: | Choice options with pixel locations: Walking (continuously): Up to 30 min (180, 340), Up to 1 hour (300, 340), No restriction (420, 340), Other (540, 340); Standing (continuously): Up to 30 min (180, 370), Up to 1 hour (300, 370), No restriction (420, 370), Other (540, 370); Sitting (continuously): Up to 30 min (180, 400), Up to 1 hour (300, 400), No restriction (420, 400), Other (540, 400); Lifting (floor to waist): Up to 20 lbs (180, 430), Up to 30 lbs (300, 430), Up to 40 lbs (420, 430), No restriction (540, 430), Other (660, 430); Lifting waist to shoulder: Up to 20 lbs (180, 460), Up to 30 lbs (300, 460), Up to 40 lbs (420, 460), No restriction (540, 460), Other (660, 460); Stair climbing: ☐ unable (180, 490), ☐ 2 – 3 steps only (300, 490), ☐ up (420, 490), ☐ down (540, 490), ☐ assisted (660, 490), ☐ no restriction (780, 490); Able to drive: ☐ Up to 2 hours (180, 520), ☐ Up to 4 hours (300, 520), ☐ No restriction (420, 520), ☐ Other (540, 520); Able to operate heavy machinery: ☐ Up to 2 hours (180, 550), ☐ Up to 4 hours (300, 550), ☐ No restriction (420, 550), ☐ Other (540, 550)"

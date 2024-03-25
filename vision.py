@@ -14,7 +14,6 @@ import pickle
 
 class PDFObject:
     """Represents a PDF file."""
-
     def __init__(self, path):
         self._path = path  # The path to the PDF file
         self._images = convert_from_path(path)  # A list of images of the PDF file
