@@ -116,10 +116,10 @@ def main(pdf_path, output_folder):
         data_url = pdf.get_dataurl_encoding(page_number)
         # Formulate the prompt for the current page
         prompt = '''Given the form content, identify and categorize all items as either free field questions, checkbox questions, or multiple-choice questions. For each item, provide the question text and specify the central pixel location of the answer field. Use the following format:
-- For free field questions: "Question text | Central pixel location: (x, y)"
-- For checkbox questions: "Question text | Checkbox options with pixel locations: ☐ Option 1 (x1, y1), ☐ Option 2 (x2, y2), ..."
-- For multiple-choice questions: "Question text | Choice options with pixel locations: Choice A (xA, yA), Choice B (xB, yB), ..."
-Ensure accuracy in identifying the pixel location of the answer field for each type of question, facilitating precise interaction with the form in a digital environment.'''
+        - For free field questions: "Question text | Central pixel location: (x, y)"
+        - For checkbox questions: "Question text | Checkbox options with pixel locations: ☐ Option 1 (x1, y1), ☐ Option 2 (x2, y2), ..."
+        - For multiple-choice questions: "Question text | Choice options with pixel locations: Choice A (xA, yA), Choice B (xB, yB), ..."
+        Ensure accuracy in identifying the pixel location of the answer field for each type of question, facilitating precise interaction with the form in a digital environment.'''
 
         # Generate response using OpenAI based on the current page's content
         try:
@@ -142,8 +142,7 @@ Ensure accuracy in identifying the pixel location of the answer field for each t
             response_text_file = f'{output_folder}/response_page_{page_number+1}.txt'
             with open(response_text_file, 'w', encoding='utf-8') as file:
                 file.write(response.choices[0].message.content)
-        
-            print(f"Response for page {page_number+1} saved to {response_text_file}")
+                print(f"Response for page {page_number+1} saved to {response_text_file}")
 
         except Exception as e:
             print(f"Error processing page {page_number+1}: {e}")

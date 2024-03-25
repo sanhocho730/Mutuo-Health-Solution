@@ -32,6 +32,10 @@ def get_unanswered_questions(query, answered_text):
     unanswered_questions_text = response.choices[0].message.content  # Adjust based on actual response structure
     return unanswered_questions_text
 
+
+
+
+
 # models
 EMBEDDING_MODEL = 'text-embedding-ada-002'
 
@@ -44,9 +48,28 @@ client = AzureOpenAI(
     api_key=os.getenv('GPT_TEXT_API_KEY'),
 )
 
-# text copied and pasted from: https://en.wikipedia.org/wiki/Curling_at_the_2022_Winter_Olympics
-# I didn't bother to format or clean the text, but GPT will still understand it
-# the entire article is too long for gpt-3.5-turbo, so I only included the top few sections
+
+# Read questions from response_page.txt
+
+
+folder_path = '/Users/isanho/Desktop/Forms/images'
+
+questions = ""
+
+# Iterate through each text file in the folder
+for filename in os.listdir(folder_path):
+    if filename.endswith(".txt"):
+        file_path = os.path.join(folder_path, filename)
+        with open(file_path, 'r') as file:
+            # Read the content of the file
+            content = file.read()
+            # Append the content to the questions string
+            questions += content + "\n\n"
+
+# Print the extracted questions
+print("Extracted questions:")
+#print(questions)
+
 
 curling = """
 
@@ -109,91 +132,10 @@ Article:
 {curling}
 \"\"\"
 
-Question: <class 'str'>
-Treatment
-If hospitalized, name of the hospital/institution ______________ from ________ to ________
-Surgery
-□ Yes □ No (If yes, state surgical procedure) _______________________________________
-□ Performed □ Planned Date of Surgery ______________ Anesthetic □ Local □ General
-List medications currently prescribed and dosage _______________________________________
-Therapy
-□ Yes □ No If yes, indicate type (e.g. physiotherapy, psychotherapy, etc.) ________________
-Frequency □ Daily _______ x per week □ Other ___________________________________
-Location: □ Outpatient □ Therapist’s Office □ Physician’s Office □ Home
-Summary of patient’s response to treatment ___________________________________________
-
-Prognosis
-Have you discussed a Return to Work Plan with your patient? □ Yes □ No
-If no, why not? __________________________________________________________________
-If yes, please provide details about the Return to Work Plan including recommendations for modified hours and/or modified duties: _________________________________________________________
-______________________________________________________________________________
-Expected date of Return to Work Full-Time __________ Next appointment __________
-<class 'str'>
-Employee Name:
-
-If employee cannot return to full duties, can the employee return to work on modified duties: Yes No Date
-
-If yes, please describe the employee's current limitations (please use the abilities section if applicable) If NO, please provide the medical contraindications to a modified return to work:
-
-Expected length of time modifications will be required:
-
-Is this injury or illness work related: Yes No Has a Form 8 been submitted to WSIB? Yes No
-
-If disability is related to pregnancy, please indicate the expected date of delivery Day Month Year
-
-I see the patient every (day, week, etc.) Date of most recent examination Day Month Year
-
-Has patient ever had a similar condition? Yes No If yes, state when and describe:
-
-FUNCTIONAL ABILITIES:
-Walking (continuously): Up to 30 min; Up to 1 hour; No restriction; Other (e.g. uneven ground)
-Standing (continuously): Up to 30 min; Up to 1 hour; No restriction; Other
-Sitting (continuously): Up to 30 min; Up to 1 hour; No restriction; Other
-Lifting floor to waist: Up to 20 lbs; Up to 30 lbs; Up to 40 lbs; No restriction; Other
-Lifting waist to shoulder: Up to 20 lbs; Up to 30 lbs; Up to 40 lbs; No restriction; Other
-Stair climbing: unable 2 – 3 steps only; down pace assisted no restriction
-Able to drive: Up to 2 hours Up to 4 hours; No restriction Other
-Able to operate heavy machinery: Up to 2 hours Up to 4 hours No restriction Other
-
-Employee is: Left handed Right handed Ambidextrous
-Limited ability to used left hand to: hold objects; grip; type; Write
-Limited ability to used right hand to: hold objects; grip; type; Write
-Completely unable to use left hand to: hold objects; grip; type; Write
-Completely unable to use right hand to: hold objects; grip; type; Write
-Hours per day: Full Hours Partial Hours (specify) anticipated duration no restriction
-
-COGNITIVE ABILITIES:
-Deadline Pressures: limited capacity Unable to perform No restriction; Other:
-Attention limited capacity Unable to perform No restriction; Other:
-Memory limited capacity Unable to perform No restriction; Other:
-Reasoning limited capacity Unable to perform No restriction; Other:
-Problem Solving: limited capacity Unable to perform No restriction; Other:
-Other clinically assessed limitations:
-
-If Nature of condition is Psychological/Mental Health, please advise if criteria for ICD -10- CM/ DSM 5 was evaluated: Yes No
-<class 'str'>
-Employee's Name
-Address
-Date of Birth
-Language
-I have access to a printer and am able to print all required medical forms
-Email Address:
-Check ONE
-Were you hospitalized?
-If YES, name of the hospital/institution
-Are you claiming or receiving any other disability, wage loss and/or retirement benefits (e.g. WSIB, CPP/QPP, auto insurance, other)?
-Are you working or volunteering in any capacity?
-Are you receiving wages from any source?
-Are you attending any educational course, program or institution?
-If yes to any of the above, please provide details of these items on a separate page and include any confirming documents, claim numbers, etc.
-If an accident caused your disability, indicate date WHERE and WHAT happened
-
-Nature of the illness or injury:
-Date illness or injury began:
-Date of examination by Physician:
-Date deemed totally disabled from work:
-Is there a medical treatment plan currently in place?
-Is the employee compliant with the prescribed/recommended treatment plan?
+Question:
+\"\"\"
+{questions}
+\"\"\"
 """
 
 response = client.chat.completions.create(
