@@ -1,0 +1,85 @@
+Dr. Carter: Jane, let's address the rest of the paperwork to ensure everything is thoroughly documented. Can you confirm your current address?
+
+Jane Smith: Sure, it's 123 Maple Street, Springfield.
+
+Dr. Carter: And your email address for our records?
+
+Jane Smith: It's jane.smith@email.com.
+
+Dr. Carter: Have you been treated at a hospital or institution for this condition?
+
+Jane Smith: No, all treatments have been outpatient.
+
+Dr. Carter: Was your condition caused by an accident?
+
+Jane Smith: No, it developed over time due to my job.
+
+Dr. Carter: When were you deemed totally disabled from work?
+
+Jane Smith: Officially from last month.
+
+Dr. Carter: Are you currently receiving any other disability benefits?
+
+Jane Smith: No, I am not.
+
+Dr. Carter: Have you been compliant with the treatment plan we set out?
+
+Jane Smith: Yes, I’ve followed all your recommendations.
+
+Dr. Carter: Can you tell me about your frequency of treatment? How often do we see each other?
+
+Jane Smith: We've scheduled appointments every two weeks.
+
+Dr. Carter: How would you describe your response to the treatment so far?
+
+Jane Smith: I feel it's been somewhat effective, but the progress is slow.
+
+Dr. Carter: If there's been no improvement, can you explain why?
+
+Jane Smith: I think it’s due to the nature of my condition. It just takes time.
+
+Dr. Carter: Have we discussed a return to work plan including modified duties?
+
+Jane Smith: Yes, we've talked about it, but nothing’s been finalized.
+
+Dr. Carter: When do you anticipate returning to work full-time?
+
+Jane Smith: I'm hopeful in the next three months, depending on my recovery.
+
+Dr. Carter: Any additional comments you’d like to add?
+
+Jane Smith: Just a note of thanks for your support through this process.
+
+Dr. Carter: Let's record my details. My name, Dr. Aaron Carter, our clinic's address, 456 Health Blvd, Springfield. My signature will go here, and I specialize in Orthopedics. The best number to reach us is 555-0203, and our fax is 555-0204.
+
+Dr. Carter: Regarding the expected length of modifications required at your workplace?
+
+Jane Smith: It's hard to say, possibly until my full return.
+
+Dr. Carter: Since your condition isn't related to pregnancy, we'll skip that section. I see you every two weeks, and our most recent examination was today.
+
+Dr. Carter: Regarding the checkbox options, for anesthesia, we went with local, right?
+
+Jane Smith: Yes, that's correct.
+
+Dr. Carter: And your treatments have been carried out in this office, making it an outpatient service. We've also discussed a return to work plan, haven't we?
+
+Jane Smith: Yes, we have.
+
+Dr. Carter: Based on your current condition, modified duties are necessary, correct?
+
+Jane Smith: Yes, for the time being.
+
+Dr. Carter: And we've submitted a Form 8 to WSIB?
+
+Jane Smith: You mentioned it was taken care of last visit.
+
+Dr. Carter: For your functional abilities, we've noted restrictions on lifting and recommended avoidance of repetitive hand movements. Your ability to use your left hand is limited but not completely restricted. Correct?
+
+Jane Smith: Correct, there are definite limitations.
+
+Dr. Carter: Given your cognitive abilities, would you say there are limited capacities under stress or with memory tasks?
+
+Jane Smith: Yes, that's accurate, especially under deadline pressures.
+
+Dr. Carter: Great, that should cover everything. We'll make sure this information is properly documented and submitted.

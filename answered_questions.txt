@@ -1,0 +1,42 @@
+Answers:
+
+- Free field questions: 
+  "Address": 123 Maple Street, Springfield
+  "Email Address": jane.smith@email.com
+  "If YES, name of the hospital/institution": N/A
+  "If an accident caused your disability, indicate date": N/A
+  "Date deemed totally disabled from work": Last month
+  "Is there a medical treatment plan currently in place? If no, why?": Yes, Jane Smith has been following all the recommendations set out by Dr. Carter.
+- Checkbox questions: 
+  "Are you claiming or receiving any other disability, wage loss and/or retirement benefits (e.g. WSIB, CPP/QPP, auto insurance, other)? | Checkbox options: ☐ Yes, ☐ No": ☑️ No
+  "Is the employee compliant with the prescribed/recommended treatment plan? | Checkbox options: ☐ Yes, ☐ No": ☑️ Yes
+- Free field questions: 
+  "List medications currently prescribed and dosage ": N/A
+  "Frequency __________ Daily __________ x per week": Every two weeks
+  "Summary of patient's response to treatment ": Somewhat effective, but progress is slow
+  "If no, why not? ": N/A
+  "If yes, please provide details about the Return to Work Plan including recommendations for modified hours and/or modified duties: ": Discussed but not finalized
+  "Expected date of Return to Work Full-Time __________ Next appointment __________": Expected in the next three months, next appointment not specified
+  "Additional Comments: ": Jane Smith expressed gratitude for Dr. Carter's support
+  "Physician's Name (please print): ": Dr. Aaron Carter
+  "Address ": 456 Health Blvd, Springfield
+  "Signature: ": N/A
+  "Specialty: ": Orthopedics
+  "Telephone: ": 555-0203
+  "Fax ": 555-0204
+- Checkbox questions: 
+  "Anesthetic | Checkbox options : ☐ Local , ☐ General ": ☑️ Local
+  "Location: | Checkbox options : ☐ Outpatient , ☐ Therapist's Office , ☐ Physician's Office , ☐ Home ": ☑️ Outpatient
+  "Have you discussed a Return to Work Plan with your patient? | Checkbox options : ☐ Yes , ☐ No ": ☑️ Yes
+- Free field questions: "Expected length of time modifications will be required: ": Until full return to work
+- Free field questions: "I see the patient every __________ (day, week, etc.) Date of most recent examination __________ Day __________ Month __________ Year ": Every two weeks, most recent examination was today
+- Free field questions: "If yes, state when and describe: ": N/A
+- Free field questions: "Other clinically assessed limitations: ": Limited capacities under stress or with memory tasks
+- Checkbox questions: "If employee cannot return to full duties, can the employee return to work on modified duties: | Checkbox options : ☐ Yes , ☐ No , ☐ Date ": ☑️ Yes
+- Checkbox questions: "Has a Form 8 been submitted to WSIB? | Checkbox options : ☐ Yes , ☐ No ": ☑️ Yes
+- Checkbox questions: "FUNCTIONAL ABILITIES: | Checkbox options : ☐ Walking (continuously): Up to 30 min; ☐ Up to 1 hour; ☐ No restriction; ☐ Other , ☐ Standing (continuously): Up to 30 min; ☐ Up to 1 hour; ☐ No restriction; ☐ Other , ☐ Sitting (continuously): Up to 30 min; ☐ Up to 1 hour; ☐ No restriction; ☐ Other , ☐ Lifting floor to waist: Up to 20 lbs; ☐ Up to 30 lbs; ☐ Up to 40 lbs; ☐ No restriction; ☐ Other , ☐ Lifting waist to shoulder: Up to 20 lbs; ☐ Up to 30 lbs; ☐ Up to 40 lbs; ☐ No restriction; ☐ Other , ☐ Stair climbing: ☐ Unable ☐ 2 – 3 steps only; ☐ Up; ☐ Down; ☐ Assisted ☐ No restriction , ☐ Able to drive: ☐ Up to 2 hours ☐ Up to 4 hours ☐ No restriction ☐ Other , ☐ Able to operate heavy machinery: ☐ Up to 2 hours ☐ Up to 4 hours ☐ No restriction ☐ Other ": N/A
+- Checkbox questions: "Limited ability to used left hand to: | Checkbox options : ☐ Hold objects; ☐ Grip; ☐ Type; ☐ Write ": ☑️ Hold objects, ☑️ Grip, ☑️ Type, ☑️ Write
+- Checkbox questions: "Completely unable to use left hand to: | Checkbox options : ☐ Hold objects; ☐ Grip; ☐ Type; ☐ Write ": N/A
+- Checkbox questions: "Completely unable to use right hand to: | Checkbox options : ☐ Hold objects; ☐ Grip; ☐ Type; ☐ Write ": N/A
+- Checkbox questions: "Hours per day: | Checkbox options : ☐ Full Hours , ☐ Partial Hours (specify) __________ anticipated duration __________ , ☐ No restriction ": N/A
+- Checkbox questions: "COGNITIVE ABILITIES: | Checkbox options : ☐ Deadline Pressures: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Attention: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Memory: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Reasoning: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Problem Solving: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other ": ☑️ Deadline Pressures: Limited capacity, ☑️ Memory: Limited capacity

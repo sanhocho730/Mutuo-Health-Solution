@@ -1,52 +1,42 @@
 Follow-up Needed for Unanswered Questions:
 
-- Free field questions:
-  - Address | Central pixel location: (150, 210)
-  - Email Address | Central pixel location: (500, 270)
-  - If YES, name of the hospital/institution | Central pixel location: (300, 330)
-  - If an accident caused your disability, indicate date | Central pixel location: (300, 450)
-  - Employee Signature | Central pixel location: (400, 600)
-  - Date of examination by Physician | Central pixel location: (300, 810)
-  - Date deemed totally disabled from work | Central pixel location: (300, 840)
-  - "Frequency x per week | Central pixel location: (330, 450)"
-  - "If no, why not? | Central pixel location: (330, 620)"
-  - "If yes, please provide details about the Return to Work Plan including recommendations for modified hours and/or modified duties: | Central pixel location: (330, 640)"
-  - "Expected date of Return to Work Full-Time | Central pixel location: (330, 690)"
-  - "Physician's Name (please print): | Central pixel location: (330, 950)"
-  - "Telephone: | Central pixel location: (330, 970)"
-  - "Address | Central pixel location: (330, 990)"
-  - "Fax | Central pixel location: (330, 1010)"
-  - "Signature: | Central pixel location: (330, 1030)"
-  - "Specialty: | Central pixel location: (330, 1050)"
-  - "Expected length of time modifications will be required: | Central pixel location: (340, 190)"
-  - "If disability is related to pregnancy, please indicate the expected date of delivery | Central pixel location: (500, 220)"
-  - "I see the patient every (day, week, etc.): | Central pixel location: (200, 250)"
-  - "Date of most recent examination | Central pixel location: (500, 250)"
-  - "If yes, state when and describe: | Central pixel location: (340, 280)"
-  - "Other clinically assessed limitations: | Central pixel location: (500, 580)"
-  - "If Nature of condition is Psychological/Mental Health, please advise if criteria for ICD -10- CM/ DSM 5 was evaluated: | Central pixel location: (340, 610)"
-
-- Checkbox questions:
-  - I have access to a printer and am able to print all required medical forms | Checkbox options with pixel locations: ☐ Yes (500, 270), ☐ No (550, 270)
-  - Are you claiming or receiving any other disability, wage loss and/or retirement benefits | Checkbox options with pixel locations: ☐ Yes (500, 360), ☐ No (550, 360)
-  - Are you working or volunteering in any capacity? | Checkbox options with pixel locations: ☐ Yes (500, 390), ☐ No (550, 390)
-  - Are you attending any educational course, program or institution? | Checkbox options with pixel locations: ☐ Yes (500, 420), ☐ No (550, 420)
-  - Is the employee compliant with the prescribed/recommended treatment plan? | Checkbox options with pixel locations: ☐ Yes (500, 900), ☐ No (550, 900)
-  - "Frequency | Checkbox options with pixel locations: ☐ Daily (180, 450), ☐ Other (530, 450)"
-  - "Location: | Checkbox options with pixel locations: ☐ Outpatient (180, 480), ☐ Therapist's Office (380, 480), ☐ Physician's Office (580, 480), ☐ Home (780, 480)"
-  - "Prognosis | Checkbox options with pixel locations: ☐ Yes (180, 600), ☐ No (280, 600)"
-  - "If employee cannot return to full duties, can the employee return to work on modified duties: | Checkbox options with pixel locations: ☐ Yes (180, 130), ☐ No (250, 130), ☐ Date (320, 130)"
-  - "Has patient ever had a similar condition? | Checkbox options with pixel locations: ☐ Yes (180, 280), ☐ No (250, 280)"
-  - "Limited ability to use left hand to: | Checkbox options with pixel locations: ☐ hold objects (180, 460), ☐ grip (300, 460), ☐ type (420, 460), ☐ Write (540, 460)"
-  - "Completely unable to use left hand to: | Checkbox options with pixel locations: ☐ hold objects (180, 520), ☐ grip (300, 520), ☐ type (420, 520), ☐ Write (540, 520)"
-  - "Hours per day: | Checkbox options with pixel locations: ☐ Full Hours (180, 580), ☐ Partial Hours (specify) (300, 580), ☐ anticipated duration (420, 580), ☐ no restriction (540, 580)"
-  - "Deadline Pressures: | Checkbox options with pixel locations: ☐ limited capacity (180, 610), ☐ Unable to perform (300, 610), ☐ no restriction (420, 610), ☐ Other (540, 610)"
-  - "Attention: | Checkbox options with pixel locations: ☐ limited capacity (180, 640), ☐ Unable to perform (300, 640), ☐ no restriction (420, 640), ☐ Other (540, 640)"
-  - "Memory: | Checkbox options with pixel locations: ☐ limited capacity (180, 670), ☐ Unable to perform (300, 670), ☐ no restriction (420, 670), ☐ Other (540, 670)"
-  - "Reasoning: | Checkbox options with pixel locations: ☐ limited capacity (180, 700), ☐ Unable to perform (300, 700), ☐ no restriction (420, 700), ☐ Other (540, 700)"
-  - "Problem Solving: | Checkbox options with pixel locations: ☐ limited capacity (180, 730), ☐ Unable to perform (300, 730), ☐ no restriction (420, 730), ☐ Other (540, 730)"
-
-
-
-- Multiple-choice questions:
-  - "FUNCTIONAL ABILITIES: | Choice options with pixel locations: Walking (continuously): Up to 30 min (180, 340), Up to 1 hour (300, 340), No restriction (420, 340), Other (540, 340); Standing (continuously): Up to 30 min (180, 370), Up to 1 hour (300, 370), No restriction (420, 370), Other (540, 370); Sitting (continuously): Up to 30 min (180, 400), Up to 1 hour (300, 400), No restriction (420, 400), Other (540, 400); Lifting (floor to waist): Up to 20 lbs (180, 430), Up to 30 lbs (300, 430), Up to 40 lbs (420, 430), No restriction (540, 430), Other (660, 430); Lifting waist to shoulder: Up to 20 lbs (180, 460), Up to 30 lbs (300, 460), Up to 40 lbs (420, 460), No restriction (540, 460), Other (660, 460); Stair climbing: ☐ unable (180, 490), ☐ 2 – 3 steps only (300, 490), ☐ up (420, 490), ☐ down (540, 490), ☐ assisted (660, 490), ☐ no restriction (780, 490); Able to drive: ☐ Up to 2 hours (180, 520), ☐ Up to 4 hours (300, 520), ☐ No restriction (420, 520), ☐ Other (540, 520); Able to operate heavy machinery: ☐ Up to 2 hours (180, 550), ☐ Up to 4 hours (300, 550), ☐ No restriction (420, 550), ☐ Other (540, 550)"
+- Free field questions: 
+  "Address"
+  "Email Address"
+  "If YES, name of the hospital/institution"
+  "If an accident caused your disability, indicate date"
+  "Date deemed totally disabled from work"
+  "Is there a medical treatment plan currently in place? If no, why?"
+- Checkbox questions: 
+  "Are you claiming or receiving any other disability, wage loss and/or retirement benefits (e.g. WSIB, CPP/QPP, auto insurance, other)? | Checkbox options: ☐ Yes, ☐ No"
+  "Is the employee compliant with the prescribed/recommended treatment plan? | Checkbox options: ☐ Yes, ☐ No"
+- Free field questions: 
+  "List medications currently prescribed and dosage "
+  "Frequency __________ Daily __________ x per week"
+  "Summary of patient's response to treatment "
+  "If no, why not? "
+  "If yes, please provide details about the Return to Work Plan including recommendations for modified hours and/or modified duties: "
+  "Expected date of Return to Work Full-Time __________ Next appointment __________"
+  "Additional Comments: "
+  "Physician's Name (please print): "
+  "Address "
+  "Signature: "
+  "Specialty: "
+  "Telephone: "
+  "Fax "
+- Checkbox questions: 
+  "Anesthetic | Checkbox options : ☐ Local , ☐ General "
+  "Location: | Checkbox options : ☐ Outpatient , ☐ Therapist's Office , ☐ Physician's Office , ☐ Home "
+  "Have you discussed a Return to Work Plan with your patient? | Checkbox options : ☐ Yes , ☐ No "
+- Free field questions: "Expected length of time modifications will be required: "
+- Free field questions: "I see the patient every __________ (day, week, etc.) Date of most recent examination __________ Day __________ Month __________ Year "
+- Free field questions: "If yes, state when and describe: "
+- Free field questions: "Other clinically assessed limitations: "
+- Checkbox questions: "If employee cannot return to full duties, can the employee return to work on modified duties: | Checkbox options : ☐ Yes , ☐ No , ☐ Date "
+- Checkbox questions: "Has a Form 8 been submitted to WSIB? | Checkbox options : ☐ Yes , ☐ No "
+- Checkbox questions: "FUNCTIONAL ABILITIES: | Checkbox options : ☐ Walking (continuously): Up to 30 min; ☐ Up to 1 hour; ☐ No restriction; ☐ Other , ☐ Standing (continuously): Up to 30 min; ☐ Up to 1 hour; ☐ No restriction; ☐ Other , ☐ Sitting (continuously): Up to 30 min; ☐ Up to 1 hour; ☐ No restriction; ☐ Other , ☐ Lifting floor to waist: Up to 20 lbs; ☐ Up to 30 lbs; ☐ Up to 40 lbs; ☐ No restriction; ☐ Other , ☐ Lifting waist to shoulder: Up to 20 lbs; ☐ Up to 30 lbs; ☐ Up to 40 lbs; ☐ No restriction; ☐ Other , ☐ Stair climbing: ☐ Unable ☐ 2 – 3 steps only; ☐ Up; ☐ Down; ☐ Assisted ☐ No restriction , ☐ Able to drive: ☐ Up to 2 hours ☐ Up to 4 hours ☐ No restriction ☐ Other , ☐ Able to operate heavy machinery: ☐ Up to 2 hours ☐ Up to 4 hours ☐ No restriction ☐ Other "
+- Checkbox questions: "Limited ability to used left hand to: | Checkbox options : ☐ Hold objects; ☐ Grip; ☐ Type; ☐ Write "
+- Checkbox questions: "Completely unable to use left hand to: | Checkbox options : ☐ Hold objects; ☐ Grip; ☐ Type; ☐ Write "
+- Checkbox questions: "Completely unable to use right hand to: | Checkbox options : ☐ Hold objects; ☐ Grip; ☐ Type; ☐ Write "
+- Checkbox questions: "Hours per day: | Checkbox options : ☐ Full Hours , ☐ Partial Hours (specify) __________ anticipated duration __________ , ☐ No restriction "
+- Checkbox questions: "COGNITIVE ABILITIES: | Checkbox options : ☐ Deadline Pressures: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Attention: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Memory: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Reasoning: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Problem Solving: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other "

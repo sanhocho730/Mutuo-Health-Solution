@@ -33,6 +33,48 @@ def get_unanswered_questions(query, answered_text):
     return unanswered_questions_text
 
 
+def generate_answers_from_conversation(conversation_path, unanswered_questions_path, answered_questions_path):
+    """
+    Generates answers for the unanswered questions based on the conversation provided.
+    Reads the conversation and unanswered questions from their respective files, then
+    generates answers using GPT and saves them to a specified file.
+    
+    :param conversation_path: Path to the file containing the conversation text.
+    :param unanswered_questions_path: Path to the file containing the unanswered questions.
+    :param answered_questions_path: Path to the file where the answered questions will be saved.
+    """
+    # Load the conversation text
+    with open(conversation_path, 'r', encoding='utf-8') as file:
+        conversation_text = file.read()
+    
+    # Load the unanswered questions
+    with open(unanswered_questions_path, 'r', encoding='utf-8') as file:
+        unanswered_questions = file.read()
+    
+    # Generate the prompt for GPT based on the conversation and unanswered questions
+    prompt = f"{conversation_text}\n\nBased on the above conversation, please answer the following unanswered questions:\n\n{unanswered_questions}"
+    
+    # Use GPT to generate answers
+    response = client.chat.completions.create(
+        model=AZURE_OPENAI_TURBO_DEPLOYMENT,
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant capable of understanding detailed medical conversations and providing specific answers based on the context."},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.5  # Adjust temperature if necessary to balance creativity and relevance
+    )
+    
+    # Extract the GPT-generated answers
+    try:
+        answered_text = response.choices[0].message.content
+    except AttributeError:
+        answered_text = "Error: Could not generate answers based on the conversation."
+    
+    # Save the GPT-generated answers to a file
+    with open(answered_questions_path, 'w', encoding='utf-8') as file:
+        file.write(answered_text)
+
+    print(f"Answers generated and saved to {answered_questions_path}")
 
 
 
@@ -147,14 +189,19 @@ response = client.chat.completions.create(
     temperature=0,
 )
 
+answered_questions_txt_path = '/Users/isanho/Desktop/autoscribe_forms_main/answered_questions.txt'
 answered_text = response.choices[0].message.content
 print("GPT's initial response:")
-#print(answered_text)
+print(answered_text)
+
+with open(answered_questions_txt_path, 'w', encoding='utf-8') as file:
+        file.write(answered_text)
+
 
 # Use GPT to list unanswered questions
-unanswered_questions_text = get_unanswered_questions(query, answered_text)
 print("\nUnanswered questions as identified by GPT:")
-print(unanswered_questions_text)
+unanswered_questions_text = get_unanswered_questions(query, answered_text)
+#print(unanswered_questions_text)
 
 
 # Save the unanswered questions to a file
@@ -165,4 +212,5 @@ with open(file_path, 'w', encoding='utf-8') as file:
     file.write(unanswered_questions_text)
 
 print(f'\nUnanswered questions have been saved to {file_path}')
+
 
