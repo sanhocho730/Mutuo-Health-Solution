@@ -57,7 +57,7 @@ class OpenAILibrary:
     """OpenAI library functions used in this project."""
     
     def __init__(
-        self, model='AZURE_OPENAI_GPT4_DEPLOYMENT', temperature=0.4, max_tokens=2000
+        self, model='AZURE_OPENAI_GPT4_DEPLOYMENT', temperature=0, max_tokens=2000
     ):
         self._azure_openai_client = AzureOpenAI()
         self._model = model
@@ -114,10 +114,11 @@ def main(pdf_path, output_folder):
         # Get the data URL encoding for the current page
         data_url = pdf.get_dataurl_encoding(page_number)
         # Formulate the prompt for the current page
-        prompt = '''Given the form content, identify and categorize all items as either free field questions, checkbox questions, or multiple-choice questions. For each item, provide the question text. Use the following format:
+        prompt = '''Given the form content, Extract all and only questions (free fields, multiple choices, checkboxes, etc.) as text from the picture. For each item, provide the question text. Use the following format:
         - For free field questions: "Question text "
         - For checkbox questions: "Question text | Checkbox options : ☐ Option 1 , ☐ Option 2 , ..."
-        - For multiple-choice questions: "Question text | Choice options : Choice A , Choice B , ..."
+        - For multiple-choice questions: "Question text | Choice options : Choice A , Choice B , ...
+        Ensure accuracy and facilitating precise interaction with the form in a digital environment."
         '''
 
         # Generate response using OpenAI based on the current page's content

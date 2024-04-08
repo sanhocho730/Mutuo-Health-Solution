@@ -1,42 +1,17 @@
-Follow-up Needed for Unanswered Questions:
-
-- Free field questions: 
-  "Address"
-  "Email Address"
-  "If YES, name of the hospital/institution"
-  "If an accident caused your disability, indicate date"
-  "Date deemed totally disabled from work"
-  "Is there a medical treatment plan currently in place? If no, why?"
-- Checkbox questions: 
-  "Are you claiming or receiving any other disability, wage loss and/or retirement benefits (e.g. WSIB, CPP/QPP, auto insurance, other)? | Checkbox options: ☐ Yes, ☐ No"
-  "Is the employee compliant with the prescribed/recommended treatment plan? | Checkbox options: ☐ Yes, ☐ No"
-- Free field questions: 
-  "List medications currently prescribed and dosage "
-  "Frequency __________ Daily __________ x per week"
-  "Summary of patient's response to treatment "
-  "If no, why not? "
-  "If yes, please provide details about the Return to Work Plan including recommendations for modified hours and/or modified duties: "
-  "Expected date of Return to Work Full-Time __________ Next appointment __________"
-  "Additional Comments: "
-  "Physician's Name (please print): "
-  "Address "
-  "Signature: "
-  "Specialty: "
-  "Telephone: "
-  "Fax "
-- Checkbox questions: 
-  "Anesthetic | Checkbox options : ☐ Local , ☐ General "
-  "Location: | Checkbox options : ☐ Outpatient , ☐ Therapist's Office , ☐ Physician's Office , ☐ Home "
-  "Have you discussed a Return to Work Plan with your patient? | Checkbox options : ☐ Yes , ☐ No "
-- Free field questions: "Expected length of time modifications will be required: "
-- Free field questions: "I see the patient every __________ (day, week, etc.) Date of most recent examination __________ Day __________ Month __________ Year "
-- Free field questions: "If yes, state when and describe: "
-- Free field questions: "Other clinically assessed limitations: "
-- Checkbox questions: "If employee cannot return to full duties, can the employee return to work on modified duties: | Checkbox options : ☐ Yes , ☐ No , ☐ Date "
-- Checkbox questions: "Has a Form 8 been submitted to WSIB? | Checkbox options : ☐ Yes , ☐ No "
-- Checkbox questions: "FUNCTIONAL ABILITIES: | Checkbox options : ☐ Walking (continuously): Up to 30 min; ☐ Up to 1 hour; ☐ No restriction; ☐ Other , ☐ Standing (continuously): Up to 30 min; ☐ Up to 1 hour; ☐ No restriction; ☐ Other , ☐ Sitting (continuously): Up to 30 min; ☐ Up to 1 hour; ☐ No restriction; ☐ Other , ☐ Lifting floor to waist: Up to 20 lbs; ☐ Up to 30 lbs; ☐ Up to 40 lbs; ☐ No restriction; ☐ Other , ☐ Lifting waist to shoulder: Up to 20 lbs; ☐ Up to 30 lbs; ☐ Up to 40 lbs; ☐ No restriction; ☐ Other , ☐ Stair climbing: ☐ Unable ☐ 2 – 3 steps only; ☐ Up; ☐ Down; ☐ Assisted ☐ No restriction , ☐ Able to drive: ☐ Up to 2 hours ☐ Up to 4 hours ☐ No restriction ☐ Other , ☐ Able to operate heavy machinery: ☐ Up to 2 hours ☐ Up to 4 hours ☐ No restriction ☐ Other "
-- Checkbox questions: "Limited ability to used left hand to: | Checkbox options : ☐ Hold objects; ☐ Grip; ☐ Type; ☐ Write "
-- Checkbox questions: "Completely unable to use left hand to: | Checkbox options : ☐ Hold objects; ☐ Grip; ☐ Type; ☐ Write "
-- Checkbox questions: "Completely unable to use right hand to: | Checkbox options : ☐ Hold objects; ☐ Grip; ☐ Type; ☐ Write "
-- Checkbox questions: "Hours per day: | Checkbox options : ☐ Full Hours , ☐ Partial Hours (specify) __________ anticipated duration __________ , ☐ No restriction "
-- Checkbox questions: "COGNITIVE ABILITIES: | Checkbox options : ☐ Deadline Pressures: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Attention: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Memory: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Reasoning: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other , ☐ Problem Solving: Limited capacity ☐ Unable to perform ☐ No restriction; ☐ Other "
+- "Phone No ": 555-1234
+- "Address ": 789 Oak Street, Springfield
+- "I have access to a printer and am able to print all required medical forms | Checkbox options : ☑ Yes , ☐ No "
+- "Email Address: ": janesmith@email.com
+- "Are you claiming or receiving any other disability, wage loss and/or retirement benefits (e.g. WSIB, CPP/QPP, auto insurance, other)? | Checkbox options : ☑ Yes , ☐ No "
+- "Date deemed totally disabled from work: ": Two months ago
+- "Anesthetic | Checkbox options : ☑ Local , ☐ General "
+- "Frequency | Choice options : Daily , __ x per week , Other ": 2 x per week
+- "Location: | Checkbox options : ☐ Outpatient , ☑ Therapist's Office , ☐ Physician's Office , ☐ Home "
+- "Expected date of Return to Work Full-Time __________ Next appointment __________ ": Expected date of Return to Work Full-Time: In three months, Next appointment: In two weeks
+- "Expected length of time modifications will be required: ": Six months
+- "Has a Form 8 been submitted to WSIB? | Checkbox options : ☑ Yes , ☐ No "
+- "I see the patient every (day, week, etc.) Date of most recent examination ": N/A
+- "FUNCTIONAL ABILITIES: | Checkbox options : ☐ Walking (continuously): Up to 30 min; Up to 1 hour; No restriction; Other , ☐ Standing (continuously): Up to 30 min; Up to 1 hour; No restriction; Other , ☐ Sitting (continuously): Up to 30 min; Up to 1 hour; No restriction; Other , ☐ Lifting floor to waist: Up to 20 lbs; Up to 30 lbs; Up to 40 lbs; No restriction; Other , ☐ Lifting waist to shoulder: Up to 20 lbs; Up to 30 lbs; Up to 40 lbs; No restriction; Other , ☐ Stair climbing: Unable to; 2 – 3 steps only; Up; Down; Assisted; No restriction , ☐ Able to drive: Up to 2 hours; Up to 4 hours; No restriction; Other , ☐ Able to operate heavy machinery: Up to 2 hours; Up to 4 hours; No restriction; Other ": N/A
+- "Hours per day: | Checkbox options : ☐ Full Hours , ☑ Partial Hours (specify) "
+- "anticipated duration ": N/A
+- "COGNITIVE ABILITIES: | Checkbox options : ☐ Deadline Pressures: Limited capacity; Unable to perform; No restriction; Other , ☐ Attention: Limited capacity; Unable to perform; No restriction; Other , ☐ Memory: Limited capacity; Unable to perform; No restriction; Other , ☐ Reasoning: Limited capacity; Unable to perform; No restriction; Other , ☐ Problem Solving: Limited capacity; Unable to perform; No restriction; Other , ☐ Other clinically assessed limitations: ": N/A

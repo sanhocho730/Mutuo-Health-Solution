@@ -1,85 +1,61 @@
-Dr. Carter: Jane, let's address the rest of the paperwork to ensure everything is thoroughly documented. Can you confirm your current address?
+Dr. Carter: "Jane, for our records and to update your form accurately, could you confirm your current phone number?"
 
-Jane Smith: Sure, it's 123 Maple Street, Springfield.
+Jane Smith: "Certainly, it's 555-1234."
 
-Dr. Carter: And your email address for our records?
+Dr. Carter: "And your current address?"
 
-Jane Smith: It's jane.smith@email.com.
+Jane Smith: "I've recently moved to 789 Oak Street, Springfield."
 
-Dr. Carter: Have you been treated at a hospital or institution for this condition?
+Dr. Carter: "Do you have a printer at home to print out medical forms?"
 
-Jane Smith: No, all treatments have been outpatient.
+Jane Smith: "Yes, I do have a working printer."
 
-Dr. Carter: Was your condition caused by an accident?
+Dr. Carter: "Could you provide an email address where we can send updates and information?"
 
-Jane Smith: No, it developed over time due to my job.
+Jane Smith: "Of course, it's janesmith@email.com."
 
-Dr. Carter: When were you deemed totally disabled from work?
+Dr. Carter: "Have you applied for or are you currently receiving any disability or other benefits?"
 
-Jane Smith: Officially from last month.
+Jane Smith: "Yes, I've applied for WSIB benefits."
 
-Dr. Carter: Are you currently receiving any other disability benefits?
+Dr. Carter: "When were you deemed totally disabled from work?"
 
-Jane Smith: No, I am not.
+Jane Smith: "It was officially noted two months ago."
 
-Dr. Carter: Have you been compliant with the treatment plan we set out?
+Dr. Carter: "What type of anesthetic was used for your surgery?"
 
-Jane Smith: Yes, I’ve followed all your recommendations.
+Jane Smith: "Local anesthetic was used."
 
-Dr. Carter: Can you tell me about your frequency of treatment? How often do we see each other?
+Dr. Carter: "Where are you currently receiving your treatment?"
 
-Jane Smith: We've scheduled appointments every two weeks.
+Jane Smith: "I'm going to the therapist's office for my sessions."
 
-Dr. Carter: How would you describe your response to the treatment so far?
+Dr. Carter: "Have we discussed a plan for your return to work?"
 
-Jane Smith: I feel it's been somewhat effective, but the progress is slow.
+Jane Smith: "Yes, we've talked about making some adjustments at my workplace to accommodate my return."
 
-Dr. Carter: If there's been no improvement, can you explain why?
+Dr. Carter: "Could you elaborate on the return to work plan we discussed?"
 
-Jane Smith: I think it’s due to the nature of my condition. It just takes time.
+Jane Smith: "The plan includes modifying my workspace with ergonomic equipment and starting with part-time hours."
 
-Dr. Carter: Have we discussed a return to work plan including modified duties?
+Dr. Carter: "When do you expect to return to work full-time, and when is our next appointment?"
 
-Jane Smith: Yes, we've talked about it, but nothing’s been finalized.
+Jane Smith: "I hope to return full-time in three months. Our next appointment is scheduled for two weeks from today."
 
-Dr. Carter: When do you anticipate returning to work full-time?
+Dr. Carter: "Any additional comments you'd like to add today?"
 
-Jane Smith: I'm hopeful in the next three months, depending on my recovery.
+Jane Smith: "I appreciate all the support from your team during my recovery."
 
-Dr. Carter: Any additional comments you’d like to add?
+Dr. Carter: "How long do you anticipate needing the workplace modifications?"
 
-Jane Smith: Just a note of thanks for your support through this process.
+Jane Smith: "I expect the modifications will be needed for at least six months as I gradually return to full capacity."
 
-Dr. Carter: Let's record my details. My name, Dr. Aaron Carter, our clinic's address, 456 Health Blvd, Springfield. My signature will go here, and I specialize in Orthopedics. The best number to reach us is 555-0203, and our fax is 555-0204.
+Dr. Carter: "Has the Form 8 been submitted for your WSIB claim?"
 
-Dr. Carter: Regarding the expected length of modifications required at your workplace?
+Jane Smith: "Yes, it has been submitted along with my application."
 
-Jane Smith: It's hard to say, possibly until my full return.
+Dr. Carter: "Regarding your therapy, how often are your sessions?"
 
-Dr. Carter: Since your condition isn't related to pregnancy, we'll skip that section. I see you every two weeks, and our most recent examination was today.
+Jane Smith: "I'm attending physical therapy sessions twice a week."
 
-Dr. Carter: Regarding the checkbox options, for anesthesia, we went with local, right?
-
-Jane Smith: Yes, that's correct.
-
-Dr. Carter: And your treatments have been carried out in this office, making it an outpatient service. We've also discussed a return to work plan, haven't we?
-
-Jane Smith: Yes, we have.
-
-Dr. Carter: Based on your current condition, modified duties are necessary, correct?
-
-Jane Smith: Yes, for the time being.
-
-Dr. Carter: And we've submitted a Form 8 to WSIB?
-
-Jane Smith: You mentioned it was taken care of last visit.
-
-Dr. Carter: For your functional abilities, we've noted restrictions on lifting and recommended avoidance of repetitive hand movements. Your ability to use your left hand is limited but not completely restricted. Correct?
-
-Jane Smith: Correct, there are definite limitations.
-
-Dr. Carter: Given your cognitive abilities, would you say there are limited capacities under stress or with memory tasks?
-
-Jane Smith: Yes, that's accurate, especially under deadline pressures.
-
-Dr. Carter: Great, that should cover everything. We'll make sure this information is properly documented and submitted.
+Dr. Carter: "Thank you, Jane. We've updated your information accordingly."

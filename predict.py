@@ -33,50 +33,6 @@ def get_unanswered_questions(query, answered_text):
     return unanswered_questions_text
 
 
-def generate_answers_from_conversation(conversation_path, unanswered_questions_path, answered_questions_path):
-    """
-    Generates answers for the unanswered questions based on the conversation provided.
-    Reads the conversation and unanswered questions from their respective files, then
-    generates answers using GPT and saves them to a specified file.
-    
-    :param conversation_path: Path to the file containing the conversation text.
-    :param unanswered_questions_path: Path to the file containing the unanswered questions.
-    :param answered_questions_path: Path to the file where the answered questions will be saved.
-    """
-    # Load the conversation text
-    with open(conversation_path, 'r', encoding='utf-8') as file:
-        conversation_text = file.read()
-    
-    # Load the unanswered questions
-    with open(unanswered_questions_path, 'r', encoding='utf-8') as file:
-        unanswered_questions = file.read()
-    
-    # Generate the prompt for GPT based on the conversation and unanswered questions
-    prompt = f"{conversation_text}\n\nBased on the above conversation, please answer the following unanswered questions:\n\n{unanswered_questions}"
-    
-    # Use GPT to generate answers
-    response = client.chat.completions.create(
-        model=AZURE_OPENAI_TURBO_DEPLOYMENT,
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant capable of understanding detailed medical conversations and providing specific answers based on the context."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.5  # Adjust temperature if necessary to balance creativity and relevance
-    )
-    
-    # Extract the GPT-generated answers
-    try:
-        answered_text = response.choices[0].message.content
-    except AttributeError:
-        answered_text = "Error: Could not generate answers based on the conversation."
-    
-    # Save the GPT-generated answers to a file
-    with open(answered_questions_path, 'w', encoding='utf-8') as file:
-        file.write(answered_text)
-
-    print(f"Answers generated and saved to {answered_questions_path}")
-
-
 
 # models
 EMBEDDING_MODEL = 'text-embedding-ada-002'
@@ -161,13 +117,13 @@ Follow-up: Arrange for a follow-up appointment 2 weeks post-surgery to monitor r
 
 """
 
-query = f"""Use the below information to answer the questions if possible.
-There are 3 types of questions, free field, check box and multiple choices. The free field questions are those quesions followed by a long underline or there are no answer choices after the question. 
-Answer the free field question in a new line. The check box questions are those questions followed by a check box. Answer the
-check box questions with a correct mark or an x in the location of the answer check box. And the multiple choices are those 
-questions followed by a list of choices or similar answers. Answer the multiple choice questions with the correct answer in a new line. 
-If the answer of the question is not provided in the artcle, please answer with "N/A". Make sure to include all the original questions in the answer.
-Even if there is no answer. 
+query = f"""Use the below information to fill in the form. There are three types of questions:
+1. Free field questions: These should be directly answered in the text.
+2. Checkbox questions: For checkbox questions, answer the question by checking the correct checkbox options. Indicate the selected option by marking the checkbox (☑) directly.
+3. Multiple choice questions: For these, write out the selected answers.
+If the information needed to answer a question is not provided, respond with "N/A" and ensure all original questions are included in your response.
+Given these instructions, fill in the answers based on the available information. Ensure to keep the original format of each question, particularly for checkbox options.
+
 
 Article:
 \"\"\"
@@ -186,7 +142,7 @@ response = client.chat.completions.create(
         {'role': 'user', 'content': query},
     ],
     model=AZURE_OPENAI_TURBO_DEPLOYMENT,
-    temperature=0,
+    temperature=0.4,
 )
 
 answered_questions_txt_path = '/Users/isanho/Desktop/autoscribe_forms_main/answered_questions.txt'
