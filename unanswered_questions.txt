@@ -1,17 +1,22 @@
-- "Phone No ": 555-1234
-- "Address ": 789 Oak Street, Springfield
-- "I have access to a printer and am able to print all required medical forms | Checkbox options : ☑ Yes , ☐ No "
-- "Email Address: ": janesmith@email.com
-- "Are you claiming or receiving any other disability, wage loss and/or retirement benefits (e.g. WSIB, CPP/QPP, auto insurance, other)? | Checkbox options : ☑ Yes , ☐ No "
-- "Date deemed totally disabled from work: ": Two months ago
-- "Anesthetic | Checkbox options : ☑ Local , ☐ General "
-- "Frequency | Choice options : Daily , __ x per week , Other ": 2 x per week
-- "Location: | Checkbox options : ☐ Outpatient , ☑ Therapist's Office , ☐ Physician's Office , ☐ Home "
-- "Expected date of Return to Work Full-Time __________ Next appointment __________ ": Expected date of Return to Work Full-Time: In three months, Next appointment: In two weeks
-- "Expected length of time modifications will be required: ": Six months
-- "Has a Form 8 been submitted to WSIB? | Checkbox options : ☑ Yes , ☐ No "
-- "I see the patient every (day, week, etc.) Date of most recent examination ": N/A
-- "FUNCTIONAL ABILITIES: | Checkbox options : ☐ Walking (continuously): Up to 30 min; Up to 1 hour; No restriction; Other , ☐ Standing (continuously): Up to 30 min; Up to 1 hour; No restriction; Other , ☐ Sitting (continuously): Up to 30 min; Up to 1 hour; No restriction; Other , ☐ Lifting floor to waist: Up to 20 lbs; Up to 30 lbs; Up to 40 lbs; No restriction; Other , ☐ Lifting waist to shoulder: Up to 20 lbs; Up to 30 lbs; Up to 40 lbs; No restriction; Other , ☐ Stair climbing: Unable to; 2 – 3 steps only; Up; Down; Assisted; No restriction , ☐ Able to drive: Up to 2 hours; Up to 4 hours; No restriction; Other , ☐ Able to operate heavy machinery: Up to 2 hours; Up to 4 hours; No restriction; Other ": N/A
-- "Hours per day: | Checkbox options : ☐ Full Hours , ☑ Partial Hours (specify) "
-- "anticipated duration ": N/A
-- "COGNITIVE ABILITIES: | Checkbox options : ☐ Deadline Pressures: Limited capacity; Unable to perform; No restriction; Other , ☐ Attention: Limited capacity; Unable to perform; No restriction; Other , ☐ Memory: Limited capacity; Unable to perform; No restriction; Other , ☐ Reasoning: Limited capacity; Unable to perform; No restriction; Other , ☐ Problem Solving: Limited capacity; Unable to perform; No restriction; Other , ☐ Other clinically assessed limitations: ": N/A
+1. Phone No (Area Code) (Phone Number): N/A, 555-1234
+2. Address (Apt. No.) (Street Number and Name) (City/Town) (Province) (Postal Code): N/A, 789 Oak Street, Springfield, N/A, N/A
+3. Date illness or injury began: (Day) (Month) (Year) Date of examination by Physician: N/A
+4. Date deemed totally disabled from work (Day) (Month) (Year): N/A, N/A, Two months ago
+5. If yes, please describe the employee's current limitations (please use the abilities section if applicable) If NO, please provide the medical contraindications to a modified return to work: N/A
+6. Expected length of time modifications will be required: Six months
+7. If disability is related to pregnancy, please indicate the expected date of delivery ______ Day ______ Month ______ Year: N/A
+8. I see the patient every ______ (day, week, etc.): N/A
+9. Date of most recent examination ______ Day ______ Month ______ Year: N/A
+10. If yes, state when and describe: N/A
+11. Hours per day: | Checkbox options : ☐ Full Hours , ☑ Partial Hours (specify) N/A anticipated duration N/A No restriction
+12. If Nature of condition is Psychological/Mental Health, please advise if criteria for ICD -10- CM/ DSM 5 was evaluated: | Checkbox options : ☐ Yes , ☐ No: N/A
+13. Frequency | Choice options : Daily , x per week , Other: x per week
+14. Location: | Checkbox options : ☐ Outpatient , ☑ Therapist's Office , ☐ Physician's Office , ☐ Home
+15. Prognosis: N/A
+16. Expected date of Return to Work Full-Time: In three months
+17. Physician's Name (please print): N/A
+18. Telephone: N/A
+19. Address: N/A
+20. Fax: N/A
+21. Specialty: N/A
+22. Signature: N/A
