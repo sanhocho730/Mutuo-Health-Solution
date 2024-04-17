@@ -64,7 +64,6 @@ def update_answered_questions(client, model, original_path, new_answers_text):
 
     return updated_content
 
-
 def generate_answers_from_conversation(client, model, conversation_text, unanswered_questions,unanswered_questions_path):
     """
     Generates answers for the unanswered questions based on the conversation provided.
@@ -104,10 +103,12 @@ def generate_answers_from_conversation(client, model, conversation_text, unanswe
         answered_text = "Error: Could not generate answers based on the conversation."
     
     # Save the GPT-generated answers to a file
-    with open(unanswered_questions_path, 'w', encoding='utf-8') as file:
-        file.write(answered_text)
+    #with open(unanswered_questions_path, 'w', encoding='utf-8') as file:
+    #    file.write(answered_text)
 
     print(f"Answers generated and saved to {unanswered_questions_path}")
+
+    return answered_text
 
 
 
