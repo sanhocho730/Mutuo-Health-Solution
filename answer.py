@@ -64,7 +64,7 @@ def update_answered_questions(client, model, original_path, new_answers_text):
 
     return updated_content
 
-def generate_answers_from_conversation(client, model, conversation_text, unanswered_questions,unanswered_questions_path):
+def generate_answers_from_conversation(client, model, conversation_text, unanswered_questions):
     """
     Generates answers for the unanswered questions based on the conversation provided.
     Reads the conversation and unanswered questions from their respective files, then
@@ -106,7 +106,7 @@ def generate_answers_from_conversation(client, model, conversation_text, unanswe
     #with open(unanswered_questions_path, 'w', encoding='utf-8') as file:
     #    file.write(answered_text)
 
-    print(f"Answers generated and saved to {unanswered_questions_path}")
+    print(f"Answers generated")
 
     return answered_text
 
@@ -117,7 +117,6 @@ def main():
     parser = argparse.ArgumentParser(description="Generate and integrate answers based on previous responses and conversations.")
     parser.add_argument('output_txt_path', help='Path to the file containing initial responses (output.txt)')
     parser.add_argument('conversation_txt_path', help='Path to the conversation text file (conversation.txt)')
-    parser.add_argument('unanswered_questions_path', help='Path to store newly answered questions.')
     parser.add_argument('final_output_path', help='Path to save the final integrated answers')
     args = parser.parse_args()
 
@@ -139,7 +138,7 @@ def main():
 
     # Step 2: Generate answers using the detailed conversation
     conversation_text = read_file(args.conversation_txt_path)
-    generated_answers = generate_answers_from_conversation(client, model,conversation_text, unanswered_questions, args.unanswered_questions_path)
+    generated_answers = generate_answers_from_conversation(client, model,conversation_text, unanswered_questions)
 
     # Step 3: Update answers and make final output
     new_answers = update_answered_questions(client, model, args.output_txt_path, generated_answers)
@@ -151,5 +150,5 @@ def main():
 if __name__ == '__main__':
 
     #example
-    #python answer.py output.txt input/emr/conversation.txt unanswered_questions.txt final_output.txt
+    #python answer.py output.txt input/emr/conversation.txt final_output.txt
     main()

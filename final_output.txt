@@ -1,8 +1,8 @@
-Sure, here are the updated answers:
+Here are the updated answers:
 
 Last name first in full>> Employee's Name (Last name first, in full): Smith, Jane
 Area Code|Phone Number>> Phone No (___)____________________: (___) 555-1234
-Apt No|Street Number and Name|CityTown|Province|Postal Code>> Address (Apt. No.) (Street Number and Name) (City/Town) (Province) (Postal Code): (N/A) 789 Oak Street, Springfield, (N/A), (N/A)
+Apt No|Street Number and Name|CityTown|Province|Postal Code>> Address (Apt. No.) (Street Number and Name) (City/Town) (Province) (Postal Code): 789 Oak Street, Springfield
 Date of Birth>> Date of Birth 25 Day 06 Month 1982 Year
 Employee Name Printed>> Employee Name (Printed): Smith, Jane
 Date>> Employee Signature ______________________ Date 03/04/2024
@@ -30,7 +30,7 @@ NONAME>> Expected length of time modifications will be required: Six months
 Work Related Injury/Illness>> Is this injury or illness work related: | Checkbox options : ☐ Yes , ☑ No
 NONAME>> Has a Form 8 been submitted to WSIB? | Checkbox options : ☐ Yes , ☑ No
 NONAME>> If disability is related to pregnancy, please indicate the expected date of delivery: N/A
-Date of Examination-Physcian>> I see the patient every: Twice a week
+Date of Examination-Physcian>> I see the patient every: N/A
 Date of most recent examination>> Date of most recent examination: N/A
 Similar Condition>> Has patient ever had a similar condition? | Checkbox options : ☐ Yes , ☑ No
 NONAME>> If yes, state when and describe: N/A
@@ -62,10 +62,10 @@ Surgery>> Surgery | Checkbox options : ☑ Yes , ☐ No
 Surgical Procedure>> If yes, state surgical procedure: Carpal Tunnel Release Surgery
 NONAME>> Performed | Checkbox options : ☐ Performed , ☑ Planned
 Anesthetic-Local>> Anesthetic | Checkbox options : ☐ Local , ☑ General
-List medications currently prescribed and dosage>> List medications currently prescribed and dosage: N/A
+List medications currently prescribed and dosage>> List medications currently prescribed and dosage: NSAIDs for pain relief, dosage N/A
 Therapy>> Therapy | Checkbox options : ☑ Yes , ☐ No
 NONAME>> If yes, indicate type (e.g. physiotherapy, psychotherapy, etc.): Physical therapy
-Frequency>> Frequency | Choice options: Daily , x per week , Other: N/A
+Frequency>> Frequency | Choice options: Daily , x per week , Other: Twice per week
 Therapy Location>> Location: | Checkbox options : ☐ Outpatient , ☐ Therapist's Office , ☐ Physician's Office , ☑ Home
 Summary of patients response to treatment>> Summary of patient's response to treatment: No significant improvement with conservative treatments
 Prognosis>> Prognosis: N/A
@@ -75,7 +75,7 @@ NONAME>> If yes, please provide details about the Return to Work Plan including 
 Expected RTW Date>> Expected date of Return to Work Full-Time: In three months
 Date>> Next appointment: 2 weeks post-surgery
 Additional Comments>> Additional Comments: I appreciate all the support from your team during my recovery.
-Physicians Name please print>> Physician's Name (please print): Carter, (N/A)
+Physicians Name please print>> Physician's Name (please print): N/A
 Telephone>> Telephone: N/A
 Address>> Address: N/A
 Fax>> Fax: N/A
