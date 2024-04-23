@@ -44,7 +44,7 @@ Limited ability to used left hand to:>> Limited ability to used left hand to: | 
 Limited ability to used right hand to:>> Limited ability to used right hand to: | Checkbox options : ☐ Hold objects; , ☐ Grip; , ☐ Type; , ☐ Write: Hold objects; Grip; Type; Write
 Completely unable to use left hand to:>> Completely unable to use left hand to: | Checkbox options : ☐ Hold objects; , ☐ Grip; , ☐ Type; , ☐ Write: N/A
 Completely unable to use right hand to:>> Completely unable to use right hand to: | Checkbox options : ☐ Hold objects; , ☐ Grip; , ☐ Type; , ☐ Write: N/A
-Hours/Day>> Hours per day: | Checkbox options : ☐ Full Hours , ☐ Partial Hours (specify) ______ anticipated duration ______ no restriction: Partial Hours (specify) - Part-time hours anticipated duration - Three months
+Hours/Day>> Hours per day: | Checkbox options : ☐ Full Hours , ☐ Partial Hours (specify) ______ anticipated duration ______ no restriction: Partial Hours (specify) N/A anticipated duration N/A no restriction
 Deadline Pressures>> Deadline Pressures: | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☐ No restriction; , ☐ Other: ______: Limited capacity
 Attention>> Attention: | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☐ No restriction; , ☐ Other: ______: No restriction
 Memory>> Memory: | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☐ No restriction; , ☐ Other: ______: No restriction
@@ -53,7 +53,7 @@ Problem Solving>> Problem Solving: | Checkbox options : ☐ Limited capacity , �
 Other clinically assessed limitations>> Other clinically assessed limitations: Reduced grip strength, positive Tinel's and Phalen's signs, reduced sensation in thumb, index, and middle fingers
 Psychological/Mental Health>> If Nature of condition is Psychological/Mental Health, please advise if criteria for ICD -10- CM/ DSM 5 was evaluated: | Checkbox options : ☐ Yes , ☐ No: N/A
 Employee Name>> Employee Name: Smith, Jane
-Treatment
+NONAME>> Treatment
 Hospital Name>> If hospitalized, name of the hospital/institution from ____ to ____: N/A
 Surgery>> Surgery ☐ Yes ☐ No (If yes, state surgical procedure) ____: Yes (Carpal tunnel release surgery)
 NONAME>> ☐ Performed ☐ Planned Date of Surgery ____ Anesthetic ☐ Local ☐ General: Planned Date of Surgery 04/10/2024 Anesthetic General
@@ -65,4 +65,4 @@ Summary of patients response to treatment>> Summary of patient's response to tre
 NONAME>> Prognosis
 NONAME>> Have you discussed a Return to Work Plan with your patient? ☐ Yes ☐ No: Yes
 NONAME>> If no, why not? ____: N/A
-NONAME>> If yes, please provide details about the Return to Work Plan including recommendations for: The plan includes modifying the workspace with ergonomic equipment and starting with part-time hours. The modifications are expected to be needed for at least six months as Jane gradually returns to full capacity.
+NONAME>> If yes, please provide details about the Return to Work Plan including recommendations for: The plan includes modifying my workspace with ergonomic equipment and starting with part-time hours. I expect the modifications will be needed for at least six months as I gradually return to full capacity.

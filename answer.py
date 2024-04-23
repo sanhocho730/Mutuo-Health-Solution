@@ -1,6 +1,8 @@
 import argparse
 import os
 import time
+import PyPDF2
+from fillpdf import fillpdfs
 
 from openai import AzureOpenAI
 from dotenv import load_dotenv
@@ -117,6 +119,7 @@ def generate_answers_from_conversation(client, model, conversation_text, unanswe
 def main():
     """Main function to orchestrate the processing of answers based on conversations."""
     parser = argparse.ArgumentParser(description="Generate and integrate answers based on previous responses and conversations.")
+    parser.add_argument('pdf_path', help='Path to the original pdf')
     parser.add_argument('output_txt_path', help='Path to the file containing initial responses (output.txt)')
     parser.add_argument('conversation_txt_path', help='Path to the conversation text file (conversation.txt)')
     parser.add_argument('final_output_path', help='Path to save the final integrated answers')
@@ -133,6 +136,8 @@ def main():
     )
 
     model = os.getenv('AZURE_OPENAI_GPT_TURBO_DEPLOYMENT')
+
+    input_pdf_path = args.pdf_path
 
     # Step 1: Extract unanswered questions from the initial responses
     start_time = time.time()
@@ -159,8 +164,50 @@ def main():
 
     print(f"Final answers have been saved to {args.final_output_path}")
 
+    output_pdf_path = 'answered.pdf'
+    data_dict = {}
+    temp_dict = {}
+
+    # Open the file in read mode
+    with open(args.final_output_path, 'r') as file:
+        while True:
+            line = file.readline()
+            if not line:
+                break
+            part_name = line.strip().split('>>')[0]
+            #get the question field name.
+            part_answer = line.strip().split(':')[-1].lstrip()
+            #get the question answer
+            temp_dict[part_name] = part_answer
+
+    #open the original pdf
+    with open(input_pdf_path, 'rb') as file:
+        reader = PyPDF2.PdfReader(file)
+        fields = reader.get_fields()
+
+        for field_name, field_info in fields.items():
+            field_type = field_info.get('/FT')
+            if field_name in temp_dict:
+                if field_type == '/Tx':  # Text field
+                    data_dict[field_name] = temp_dict[field_name]
+                elif field_type == '/Btn':  # Checkbox or radio button field
+                    #]options = get_field_options(reader, field_info)
+                    #if options is not None and temp_dict[field_name] in options:
+                    data_dict[field_name] = temp_dict[field_name]
+                    
+ 
+ #parse the diction & fill the questions one by one to avoid errors
+    for key, value in data_dict.items():
+        try:
+            fillpdfs.write_fillable_pdf(input_pdf_path, output_pdf_path, {key: value})
+            input_pdf_path = output_pdf_path
+        except Exception as e:
+            print(f"Error filling field {key}: {str(e)}")
+            continue
+
+
 if __name__ == '__main__':
 
     #example
-    #python answer.py output.txt input/emr/conversation.txt final_output.txt
+    #python answer.py input/form/disability.pdf output.txt input/emr/conversation.txt final_output.txt
     main()
