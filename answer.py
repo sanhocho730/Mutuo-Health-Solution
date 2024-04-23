@@ -1,5 +1,7 @@
 import argparse
 import os
+import time
+
 from openai import AzureOpenAI
 from dotenv import load_dotenv
 
@@ -133,16 +135,26 @@ def main():
     model = os.getenv('AZURE_OPENAI_GPT_TURBO_DEPLOYMENT')
 
     # Step 1: Extract unanswered questions from the initial responses
+    start_time = time.time()
     answered_text = read_file(args.output_txt_path)
     unanswered_questions = get_unanswered_questions(client, model, answered_text)
+    step1_time = time.time() - start_time
+    print(f"Time taken for extracting unanswered questions: {step1_time:.2f} seconds")
+
 
     # Step 2: Generate answers using the detailed conversation
+    start_time = time.time()
     conversation_text = read_file(args.conversation_txt_path)
     generated_answers = generate_answers_from_conversation(client, model,conversation_text, unanswered_questions)
+    step2_time = time.time() - start_time
+    print(f"Time taken for generating answers: {step2_time:.2f} seconds")
 
     # Step 3: Update answers and make final output
+    start_time = time.time()
     new_answers = update_answered_questions(client, model, args.output_txt_path, generated_answers)
     write_file(args.final_output_path, new_answers)
+    step3_time = time.time() - start_time
+    print(f"Time taken for updating answers: {step3_time:.2f} seconds")
 
 
     print(f"Final answers have been saved to {args.final_output_path}")

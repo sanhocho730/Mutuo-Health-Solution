@@ -8,6 +8,7 @@ import io
 import logging
 import os
 import pickle
+import time
 
 import PyPDF2
 
@@ -166,7 +167,7 @@ def parse_arguments():
 
 def parse_pdf(file_path):
     """Parse the PDF file and extract the questions."""
-
+    start_time = time.time()  # Start timing
     pdf = PDFEncoder(file_path)
 
     question_names = []
@@ -210,6 +211,8 @@ def parse_pdf(file_path):
 
         # Process and display the response (example below may need adjustment)
         parse_result.append(response.choices[0].message.content)
+        end_time = time.time()  # End timing
+        print(f"Time taken to extract questions: {end_time - start_time} seconds")
 
     return keys_string, parse_result
 
@@ -219,6 +222,7 @@ def predict_answers(question_list, emr_database):
     Predict the answers to the questions in the PDF file based on the EMR database.
     """
 
+    start_time = time.time()  # Start timing
     questions = '\n'.join(question_list)
 
     query = f"""Use the below information to fill in the form. 
@@ -247,6 +251,9 @@ def predict_answers(question_list, emr_database):
     response = request.send()
     predict_result = response.choices[0].message.content
 
+    end_time = time.time()  # End timing
+    print(f"Time taken to predict answers: {end_time - start_time} seconds")
+    
     return predict_result
 
 

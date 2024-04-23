@@ -1,81 +1,79 @@
 Last name first in full>> Employee's Name (Last name first, in full): Smith, Jane
-Area Code|Phone Number>> Phone No (___)____________________: N/A
-Apt No|Street Number and Name|CityTown|Province|Postal Code>> Address (Apt. No.) (Street Number and Name) (City/Town) (Province) (Postal Code): N/A
-Date of Birth>> Date of Birth 25 Day 06 Month 1982 Year
-Employee Name Printed>> Employee Name (Printed): Smith, Jane
-Date>> Employee Signature ______________________ Date 03/04/2024
+Phone Number>> Phone No (_____)____________________: N/A
+Apt No>> Address (Apt. No.)____________________: N/A
+Street Number and Name>> Address (Street Number and Name)____________________: N/A
+CityTown>> Address (City/Town)____________________: N/A
+Province>> Address (Province)____________________: N/A
+Postal Code>> Address (Postal Code)____________________: N/A
+Employee Name Printed>> Employee Name (Printed)____________________: Smith, Jane
+Date>> Date____________________: 03/04/2024
+Hospitalization>> Were you hospitalized? | Checkbox options : ☐ Yes , ☐ No: No
+NONAME>> If YES, name of the hospital/institution____________________ from ____ Day ____ Month ____ Year to ____ Day ____ Month ____ Year: N/A
+NONAME>> Are you claiming or receiving any other disability, wage loss and/or retirement benefits (e.g. WSIB, CPP/QPP, auto insurance, other)? | Checkbox options : ☐ Yes , ☐ No: No
+NONAME>> Are you working or volunteering in any capacity? | Checkbox options : ☐ Yes , ☐ No: Yes
+NONAME>> Are you receiving wages from any source? | Checkbox options : ☐ Yes , ☐ No: No
+NONAME>> Are you attending any educational course, program or institution? | Checkbox options : ☐ Yes , ☐ No: No
+NONAME>> If yes to any of the above, please provide details of these items on a separate page and include any confirming documents, claim numbers, etc.: N/A
+NONAME>> If an accident caused your disability, indicate date ____ Day ____ Month ____ Year WHERE and WHAT happened: N/A
 Illness/Injury>> Nature of the illness or injury: Severe Carpal Tunnel Syndrome
-Date of Examination-Physcian>> Date of examination by Physician: N/A
-Date-Illness/Injury>> Date illness or injury began: N/A
-Totally Disabled Date>> Date deemed totally disabled from work: N/A
-Hospitalization>> Were you hospitalized? | Checkbox options : ☐ Yes , ☑ No
-Hospital Name>> If YES, name of the hospital/institution: N/A
-Other Income Replacement>> Are you claiming or receiving any other disability, wage loss and/or retirement benefits (e.g. WSIB, CPP/QPP, auto insurance, other)? | Checkbox options : ☐ Yes , ☑ No
-Volunteering>> Are you working or volunteering in any capacity? | Checkbox options : ☐ Yes , ☑ No
-Education/Training>> Are you attending any educational course, program or institution? | Checkbox options : ☐ Yes , ☑ No
-Accident Details>> If yes to any of the above, please provide details of these items on a separate page and include any confirming documents, claim numbers, etc.: N/A
-If an accident caused your disability, indicate date: N/A
-Hospitalization-From|Hospitalization-To>> Is there a medical treatment plan currently in place? | Checkbox options : ☑ Yes , ☐ No
-Reason-No Treatment>> If no, why?: N/A
-Treatment Plan Compliance>> Is the employee compliant with the prescribed/recommended treatment plan? | Checkbox options : ☑ Yes , ☐ No
-Employee Name>> Employee Name (Printed): Smith, Jane
-Employee Signature>> Employee Signature: N/A
-Date>> Date: 03/04/2024
+Date of Examination-Physcian>> Date of examination by Physician: ____ Day ____ Month ____ Year: N/A
+Date-Illness/Injury>> Date illness or injury began: ____ Day ____ Month ____ Year: Approx. 6 months ago from current date
+Totally Disabled Date>> Date deemed totally disabled from work: ____ Day ____ Month ____ Year: N/A
+NONAME>> Is there a medical treatment plan currently in place? | Checkbox options : ☐ Yes , ☐ No: Yes
+NONAME>> Is the employee compliant with the prescribed/recommended treatment plan? | Checkbox options : ☐ Yes , ☐ No: Yes
 Employee Name>> Employee Name: Smith, Jane
-Modified Duties>> If employee cannot return to full duties, can the employee return to work on modified duties: | Checkbox options : ☑ Yes , ☐ No , ☐ Date
-NONAME>> If yes, please describe the employee's current limitations (please use the abilities section if applicable) If NO, please provide the medical contraindications to a modified return to work: N/A
-NONAME>> Expected length of time modifications will be required: N/A
-Work Related Injury/Illness>> Is this injury or illness work related: | Checkbox options : ☐ Yes , ☑ No
-NONAME>> Has a Form 8 been submitted to WSIB? | Checkbox options : ☐ Yes , ☑ No
-NONAME>> If disability is related to pregnancy, please indicate the expected date of delivery: N/A
-Date of Examination-Physcian>> I see the patient every: N/A
-Date of most recent examination>> Date of most recent examination: N/A
-Similar Condition>> Has patient ever had a similar condition? | Checkbox options : ☐ Yes , ☑ No
-NONAME>> If yes, state when and describe: N/A
-Walking>> Walking (continuously): | Checkbox options : ☐ Up to 30 min; , ☐ Up to 1 hour; , ☑ No restriction; , ☐ Other (e.g. uneven ground)
-Standing>> Standing (continuously): | Checkbox options : ☐ Up to 30 min; , ☐ Up to 1 hour; , ☑ No restriction; , ☐ Other –
-Sitting>> Sitting (continuously): | Checkbox options : ☐ Up to 30 min; , ☐ Up to 1 hour; , ☑ No restriction; , ☐ Other –
-Lifing-Floor to Waist>> Lifting (floor to waist): | Checkbox options : ☐ Up to 20 lbs; , ☐ Up to 30 lbs; , ☐ Up to 40 lbs; , ☑ No restriction; , ☐ Other
-Lifing-Waist to Shoulder>> Lifting waist to shoulder: | Checkbox options : ☐ Up to 20 lbs; , ☐ Up to 30 lbs , ☐ Up to 40 lbs; , ☑ No restriction; , ☐ Other
-Stair Climbing>> Stair climbing: | Checkbox options : ☐ Unable , ☐ 2 – 3 steps only; , ☐ Up 4 hours; , ☐ Down pace , ☐ Assisted , ☑ No restriction
-Able to operate heavy machinery>> Able to operate heavy machinery: | Checkbox options : ☐ Up to 2 hours , ☐ Up to 4 hours , ☑ No restriction , ☐ Other –
-Handedness>> Employee is: | Checkbox options : ☐ Left handed , ☑ Right handed , ☐ Ambidextrous
-Left Hand-Limited Ability>> Limited ability to used left hand to: | Checkbox options : ☐ Hold objects; , ☐ Grip; , ☐ Type; , ☐ Write
-Right Hand-Limited Ability>> Limited ability to used right hand to: | Checkbox options : ☑ Hold objects; , ☑ Grip; , ☑ Type; , ☐ Write
-Left Hand-Unable>> Completely unable to use left hand to: | Checkbox options : ☐ Hold objects; , ☐ Grip; , ☐ Type; , ☐ Write
-Right Hand-Unable>> Completely unable to use right hand to: | Checkbox options : ☐ Hold objects; , ☐ Grip; , ☑ Type; , ☐ Write
-Hours/Day>> Hours per day: | Checkbox options : ☐ Full Hours , ☐ Partial Hours (specify) ______ anticipated duration ______ , ☑ No restriction
-Deadline Pressures>> Deadline Pressures: | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☑ No restriction; , ☐ Other:
-Attention>> Attention | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☑ No restriction; , ☐ Other:
-Memory>> Memory | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☑ No restriction; , ☐ Other:
-Reasoning>> Reasoning | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☑ No restriction; , ☐ Other:
-Problem Solving>> Problem Solving: | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☑ No restriction; , ☐ Other:
-NONAME>> Other clinically assessed limitations: N/A
-Psychological/Mental Health>> If Nature of condition is Psychological/Mental Health, please advise if criteria for ICD -10- CM/ DSM 5 was evaluated: | Checkbox options : ☐ Yes , ☑ No
-Employee Name Printed>> Employee Name: Smith, Jane
-Hospital Name>> If hospitalized, name of the hospital/institution: N/A
-Date of Surgery>> from: N/A
-Date of Surgery>> to: N/A
-Surgery>> Surgery | Checkbox options : ☑ Yes , ☐ No
-Surgical Procedure>> If yes, state surgical procedure: Carpal Tunnel Release Surgery
-NONAME>> Performed | Checkbox options : ☐ Performed , ☑ Planned
-Anesthetic-Local>> Anesthetic | Checkbox options : ☐ Local , ☑ General
-List medications currently prescribed and dosage>> List medications currently prescribed and dosage: NSAIDs for pain relief, dosage N/A
-Therapy>> Therapy | Checkbox options : ☑ Yes , ☐ No
-NONAME>> If yes, indicate type (e.g. physiotherapy, psychotherapy, etc.): Physical therapy
-Frequency>> Frequency | Choice options: Daily , x per week , Other: N/A
-Therapy Location>> Location: | Checkbox options : ☐ Outpatient , ☐ Therapist's Office , ☐ Physician's Office , ☑ Home
-Summary of patients response to treatment>> Summary of patient's response to treatment: No significant improvement with conservative treatments
-Prognosis>> Prognosis: N/A
-NONAME>> Have you discussed a Return to Work Plan with your patient? | Checkbox options : ☑ Yes , ☐ No
-NONAME>> If no, why not?: N/A
-NONAME>> If yes, please provide details about the Return to Work Plan including recommendations for modified hours and/or modified duties: Advise patient on seeking workplace modifications to reduce strain on the wrist post-recovery
-Expected RTW Date>> Expected date of Return to Work Full-Time: N/A
-Date>> Next appointment: 2 weeks post-surgery
-Additional Comments>> Additional Comments: N/A
-Physicians Name please print>> Physician's Name (please print): N/A
-Telephone>> Telephone: N/A
-Address>> Address: N/A
-Fax>> Fax: N/A
-Specialty>> Specialty: N/A
-NONAME>> Signature: N/A
+Modified Duties>> If employee cannot return to full duties, can the employee return to work on modified duties: | Checkbox options : ☐ Yes , ☐ No , ☐ Date: Yes
+NONAME>> If yes, please describe the employee's current limitations (please use the abilities section if applicable) If NO, please provide the medical contraindications to a modified return to work: Limited ability to type or write, difficulty with gripping objects
+NONAME>> Expected length of time modifications will be required: Post-Operative Care period
+Work Related Injury/Illness>> Is this injury or illness work related: | Checkbox options : ☐ Yes , ☐ No: Yes
+NONAME>> Has a Form 8 been submitted to WSIB? | Checkbox options : ☐ Yes , ☐ No: N/A
+NONAME>> If disability is related to pregnancy, please indicate the expected date of delivery ______ Day ______ Month ______ Year: N/A
+Date of most recent examination>> I see the patient every ______ (day, week, etc.) Date of most recent examination ______ Day ______ Month ______ Year: N/A
+Similar Condition>> Has patient ever had a similar condition? | Checkbox options : ☐ Yes , ☐ No: No
+Walking>> Walking (continuously): | Checkbox options : ☐ Up to 30 min; , ☐ Up to 1 hour; , ☐ No restriction; , ☐ Other (e.g. uneven ground): No restriction
+Standing>> Standing (continuously): | Checkbox options : ☐ Up to 30 min; , ☐ Up to 1 hour; , ☐ No restriction; , ☐ Other –: No restriction
+Sitting>> Sitting (continuously): | Checkbox options : ☐ Up to 30 min; , ☐ Up to 1 hour; , ☐ No restriction; , ☐ Other –: No restriction
+Lifing-Floor to Waist>> Lifting floor to waist: | Checkbox options : ☐ Up to 20 lbs; , ☐ Up to 30 lbs; , ☐ Up to 40 lbs; , ☐ No restriction; , ☐ Other: Up to 5 lbs
+Lifing-Waist to Shoulder>> Lifting waist to shoulder: | Checkbox options : ☐ Up to 20 lbs; , ☐ Up to 30 lbs , ☐ Up to 40 lbs; , ☐ No restriction; , ☐ Other: Up to 5 lbs
+Stair Climbing>> Stair climbing: | Checkbox options : ☐ Unable , ☐ 2 – 3 steps only; , ☐ Up , ☐ Down , ☐ Assisted , ☐ No restriction: No restriction
+Able to operate heavy machinery>> Able to operate heavy machinery: | Checkbox options : ☐ Up to 2 hours , ☐ Up to 4 hours , ☐ No restriction , ☐ Other –: N/A
+Handedness>> Employee is: | Checkbox options : ☐ Left handed , ☐ Right handed , ☐ Ambidextrous: Right handed
+Limited ability to used left hand to:>> Limited ability to used left hand to: | Checkbox options : ☐ Hold objects; , ☐ Grip; , ☐ Type; , ☐ Write: N/A
+Limited ability to used right hand to:>> Limited ability to used right hand to: | Checkbox options : ☐ Hold objects; , ☐ Grip; , ☐ Type; , ☐ Write: Hold objects; Grip; Type; Write
+Completely unable to use left hand to:>> Completely unable to use left hand to: | Checkbox options : ☐ Hold objects; , ☐ Grip; , ☐ Type; , ☐ Write: N/A
+Completely unable to use right hand to:>> Completely unable to use right hand to: | Checkbox options : ☐ Hold objects; , ☐ Grip; , ☐ Type; , ☐ Write: N/A
+Hours/Day>> Hours per day: | Checkbox options : ☐ Full Hours , ☐ Partial Hours (specify) ______ anticipated duration ______ no restriction: Partial Hours (specify) N/A anticipated duration N/A no restriction
+Deadline Pressures>> Deadline Pressures: | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☐ No restriction; , ☐ Other: ______: Limited capacity
+Attention>> Attention: | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☐ No restriction; , ☐ Other: ______: No restriction
+Memory>> Memory: | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☐ No restriction; , ☐ Other: ______: No restriction
+Reasoning>> Reasoning: | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☐ No restriction; , ☐ Other: ______: No restriction
+Problem Solving>> Problem Solving: | Checkbox options : ☐ Limited capacity , ☐ Unable to perform , ☐ No restriction; , ☐ Other: ______: No restriction
+Other clinically assessed limitations>> Other clinically assessed limitations: Reduced grip strength, positive Tinel's and Phalen's signs, reduced sensation in thumb, index, and middle fingers
+Psychological/Mental Health>> If Nature of condition is Psychological/Mental Health, please advise if criteria for ICD -10- CM/ DSM 5 was evaluated: | Checkbox options : ☐ Yes , ☐ No: N/A
+Employee Name>> Employee Name: Smith, Jane
+
+NONAME>> Treatment
+
+Hospital Name>> If hospitalized, name of the hospital/institution from ____ to ____: N/A
+
+Surgery>> Surgery ☐ Yes ☐ No (If yes, state surgical procedure) ____: Yes (Carpal tunnel release surgery)
+
+NONAME>> ☐ Performed ☐ Planned Date of Surgery ____ Anesthetic ☐ Local ☐ General: Planned Date of Surgery 04/10/2024 Anesthetic General
+
+List medications currently prescribed and dosage>> List medications currently prescribed and dosage ____: NSAIDs for pain relief, corticosteroid injections (dosage N/A)
+
+Therapy>> Therapy ☐ Yes ☐ No (If yes, indicate type (e.g. physiotherapy, psychotherapy, etc.) ____: Yes (Physical therapy post-surgery)
+
+Frequency>> Frequency ☐ Daily ☐ __x per week ☐ Other ____: N/A
+
+NONAME>> Location: ☐ Outpatient ☐ Therapist's Office ☐ Physician's Office ☐ Home: N/A
+
+Summary of patients response to treatment>> Summary of patient's response to treatment ____: Conservative treatments including wrist splinting, NSAIDs, and corticosteroid injections without significant improvement
+
+NONAME>> Prognosis
+
+NONAME>> Have you discussed a Return to Work Plan with your patient? ☐ Yes ☐ No: Yes
+
+NONAME>> If no, why not? ____: N/A
+
+NONAME>> If yes, please provide details about the Return to Work Plan including recommendations for
