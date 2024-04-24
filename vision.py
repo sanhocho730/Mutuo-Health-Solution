@@ -8,7 +8,6 @@ import io
 import logging
 import os
 import pickle
-import time
 
 import PyPDF2
 
@@ -126,6 +125,22 @@ class OpenAIRequestLibrary:
     def _init_openai_client(cls):
         cls._azure_openai_client = AzureOpenAI()
 
+def get_field_options(reader, field_info):
+    options = []
+    kids = field_info.get('/Kids')
+    if kids:
+        for kid in kids:
+            kid_object = reader.get_object(kid)
+            if kid_object:
+                ap = kid_object.get('/AP')
+                if ap:
+                    if isinstance(ap, PyPDF2.generic.IndirectObject):
+                        ap = reader.get_object(ap)
+                    if '/N' in ap:
+                        key=[k for k in list(ap['/N'].keys()) if k!='/Off']
+                        options.extend(k.strip('/') for k in key)  # Strip the leading slash before appending
+    return options if options else None
+
 
 def parse_arguments():
     """
@@ -167,16 +182,24 @@ def parse_arguments():
 
 def parse_pdf(file_path):
     """Parse the PDF file and extract the questions."""
-    start_time = time.time()  # Start timing
+
     pdf = PDFEncoder(file_path)
 
     question_names = []
+    option_names = []
     with open(file_path, 'rb') as file:
         reader = PyPDF2.PdfReader(file)
         fields = reader.get_fields()
-        for field_name, _ in fields.items():
+        for field_name, field_info in fields.items():
             question_names.append(field_name)
+            field_type = field_info.get('/FT')
+            if field_type == '/Btn':  # Checkbox or radio button field
+                if get_field_options(reader, field_info) != None:
+                    options = get_field_options(reader, field_info)
+                option_names.extend(options)
+
     keys_string = '|'.join(question_names)
+    options_string = '|'.join(option_names)
 
     # Iterate over all pages of the PDF
     parse_result = []  # List of parsed results for each page
@@ -185,14 +208,16 @@ def parse_pdf(file_path):
         data_url = pdf.get_dataurl_encoding(page_number)
         # Formulate the prompt for the current page
         # TODO: Alternative prompt: 'Extract the all and only questions(free fields, multiple choices, check boxes, etx) as text from the picture, and generate a form with the first column as the question and the second column as the pixel location of the answer field of the question in the picture.'
-        prompt = f"""Given the form content and the Question Names "{keys_string}": (seperated by "|"), 
-        Extract all and only questions from the form content (free fields, multiple choices, checkboxes, etc.) as text from the picture. 
-        For each item, provide the question text and match the most relevant question name. If there's no question name could be matched, use "NONAME"
-        If there Place the  Use the following format:
-        - For free field questions: "Question Names>> Question text "
-        - For checkbox questions: "Question Names>> Question text | Checkbox options : ☐ Option 1 , ☐ Option 2 , ..."
-        - For multiple-choice questions: "Question Names>> Question text | Choice options : Choice A , Choice B , ...
-        Ensure accuracy and facilitating precise interaction with the form in a digital environment."
+        prompt = f"""Given the form content and the Question Names "{keys_string}": (separated by "|"), and the Option Names "{options_string}": (separated by "|"),
+        Extract all questions from the form content (free fields, multiple choices, checkboxes) as text from the picture, matching the exact case (uppercase or lowercase) and spelling of options.
+        For each item, provide the question text and match the most relevant question name. If there's no question name that can be matched, use "NONAME".
+        If the question is a checkbox or multiple-choice question, match the most relevant option name and preserve the choice exactly as it appears in Option Names (case-sensitive). If there's no match, keep it original.
+        Use the following format:
+        - For free field questions: "Question Name>> Question text"
+        - For checkbox questions: "Question Name>> Question text | Checkbox options: option 1, option 2, ..."
+        - For multiple-choice questions: "Question Names>> Question text | Choice options: choice A, choice B, ..."
+        It is crucial to match the exact case (uppercase or lowercase) and spelling of options to facilitate precise interaction with the form in a digital environment.
+
         """
 
         # Generate response using OpenAI based on the current page's content
@@ -211,10 +236,8 @@ def parse_pdf(file_path):
 
         # Process and display the response (example below may need adjustment)
         parse_result.append(response.choices[0].message.content)
-        end_time = time.time()  # End timing
-        print(f"Time taken to extract questions: {end_time - start_time} seconds")
 
-    return keys_string, parse_result
+    return parse_result
 
 
 def predict_answers(question_list, emr_database):
@@ -222,7 +245,6 @@ def predict_answers(question_list, emr_database):
     Predict the answers to the questions in the PDF file based on the EMR database.
     """
 
-    start_time = time.time()  # Start timing
     questions = '\n'.join(question_list)
 
     query = f"""Use the below information to fill in the form. 
@@ -233,7 +255,8 @@ def predict_answers(question_list, emr_database):
     3. Multiple choice questions: For these, write out the selected answers.
     If the information needed to answer a question is not provided, respond with "N/A" and ensure all original questions are included in your response.
     Given these instructions, fill in the answers based on the available information. Ensure to keep the original format of each question, particularly for checkbox options.
-    Keep the answer format as this example: "Last name first in full>> Employee's Name (Last name first, in full): Smith, Jane"
+    Keep the answer format as this example: "Last name first in full>> Employee's Name (Last name first, in full):Smith, Jane"
+    For checkbox questions, keep the answer format as this example: "Volunteering>> Are you working or volunteering in any capacity? | Checkbox options: Yes, No:No"
 
     Article:
     \"\"\"
@@ -251,9 +274,6 @@ def predict_answers(question_list, emr_database):
     response = request.send()
     predict_result = response.choices[0].message.content
 
-    end_time = time.time()  # End timing
-    print(f"Time taken to predict answers: {end_time - start_time} seconds")
-    
     return predict_result
 
 
@@ -289,7 +309,7 @@ def main():
     init()
 
     # Parse the PDF file and extract the questions
-    keys_string, parse_result = parse_pdf(args.input_form)
+    parse_result = parse_pdf(args.input_form)
 
     # Read the EMR database
     with open(args.emr_database, 'r') as file:

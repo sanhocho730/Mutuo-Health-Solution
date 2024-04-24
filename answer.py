@@ -17,15 +17,20 @@ def write_file(file_path, content):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(content)
 
+
+
+
 def get_unanswered_questions(client, model, answered_text):
     """Uses GPT to identify unanswered questions from the initial responses."""
-    prompt = f"Given the answered text, identify any questions that remain unanswered,preserving the original format of each question.:\n\n{answered_text}"
+    prompt = f"Given the answered text, extract all questions that remain unanswered or answered as N/A,preserving the original format of each question.:\n\n{answered_text}"
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "system", "content": "You are a helpful assistant."},
                   {"role": "user", "content": prompt}],
         temperature=0
     )
+
+    print(response.choices[0].message.content)
     return response.choices[0].message.content
 
 
@@ -151,6 +156,7 @@ def main():
     start_time = time.time()
     conversation_text = read_file(args.conversation_txt_path)
     generated_answers = generate_answers_from_conversation(client, model,conversation_text, unanswered_questions)
+    print(generated_answers)
     step2_time = time.time() - start_time
     print(f"Time taken for generating answers: {step2_time:.2f} seconds")
 
@@ -184,7 +190,8 @@ def main():
     with open(input_pdf_path, 'rb') as file:
         reader = PyPDF2.PdfReader(file)
         fields = reader.get_fields()
-
+        
+        
         for field_name, field_info in fields.items():
             field_type = field_info.get('/FT')
             if field_name in temp_dict:
@@ -198,12 +205,13 @@ def main():
  
  #parse the diction & fill the questions one by one to avoid errors
     for key, value in data_dict.items():
-        try:
-            fillpdfs.write_fillable_pdf(input_pdf_path, output_pdf_path, {key: value})
-            input_pdf_path = output_pdf_path
-        except Exception as e:
-            print(f"Error filling field {key}: {str(e)}")
-            continue
+        if "N/A" not in value:
+            try:
+                fillpdfs.write_fillable_pdf(input_pdf_path, output_pdf_path, {key: value})
+                input_pdf_path = output_pdf_path
+            except Exception as e:
+                print(f"Error filling field {key}: {str(e)}")
+                continue
 
 
 if __name__ == '__main__':

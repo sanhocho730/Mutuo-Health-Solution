@@ -1,61 +1,73 @@
-Dr. Carter: "Jane, for our records and to update your form accurately, could you confirm your current phone number?"
+Dr. Carter: "Jane, could you confirm your phone number for our records?"
 
-Jane Smith: "Certainly, it's 555-1234."
+Jane Smith: "Yes, it's 201-555-1234."
 
-Dr. Carter: "And your current address?"
+Dr. Carter: "What is your current address?"
 
-Jane Smith: "I've recently moved to 789 Oak Street, Springfield."
+Jane Smith: "I'm now at Apt # 817, 789 Oak Street, Springfield, NJ, 01112."
 
-Dr. Carter: "Do you have a printer at home to print out medical forms?"
+Dr. Carter: "Do you have the means to print medical forms at home?"
 
-Jane Smith: "Yes, I do have a working printer."
+Jane Smith: "Yes, I have a printer that works fine."
 
-Dr. Carter: "Could you provide an email address where we can send updates and information?"
+Dr. Carter: "And your E-Mail Address for sending updates?"
 
-Jane Smith: "Of course, it's janesmith@email.com."
+Jane Smith: "That would be janesmith@email.com."
 
-Dr. Carter: "Have you applied for or are you currently receiving any disability or other benefits?"
+Dr. Carter: "Are you receiving any disability benefits currently?"
 
-Jane Smith: "Yes, I've applied for WSIB benefits."
+Jane Smith: "I've applied for WSIB benefits."
 
-Dr. Carter: "When were you deemed totally disabled from work?"
+Dr. Carter: "We are having an examination at 04/24/2024, correct? "
 
-Jane Smith: "It was officially noted two months ago."
+Jane Smith: Yes
 
-Dr. Carter: "What type of anesthetic was used for your surgery?"
+Dr. Carter: "Can you tell me the date when you were deemed totally disabled from work?"
 
-Jane Smith: "Local anesthetic was used."
+Jane Smith: "This was determined 04/03/2024."
 
-Dr. Carter: "Where are you currently receiving your treatment?"
 
-Jane Smith: "I'm going to the therapist's office for my sessions."
+Dr. Carter: "Which anesthetic was administered for your surgery?"
 
-Dr. Carter: "Have we discussed a plan for your return to work?"
+Jane Smith: "They used a local anesthetic."
 
-Jane Smith: "Yes, we've talked about making some adjustments at my workplace to accommodate my return."
+Dr. Carter: "Where are you currently undergoing treatment?"
 
-Dr. Carter: "Could you elaborate on the return to work plan we discussed?"
+Jane Smith: "My sessions are at the therapist's office."
 
-Jane Smith: "The plan includes modifying my workspace with ergonomic equipment and starting with part-time hours."
+Dr. Carter: "Have we set up a return-to-work plan?"
 
-Dr. Carter: "When do you expect to return to work full-time, and when is our next appointment?"
+Jane Smith: "Indeed, we've discussed transitioning back with modified duties at my workplace."
 
-Jane Smith: "I hope to return full-time in three months. Our next appointment is scheduled for two weeks from today."
+Dr. Carter: "When is your expected full-time return to work, and when is our next appointment?"
 
-Dr. Carter: "Any additional comments you'd like to add today?"
+Jane Smith: "I plan to return full-time in three months, with our next appointment in two weeks."
 
-Jane Smith: "I appreciate all the support from your team during my recovery."
+Dr. Carter: "Do you have any additional comments or concerns?"
 
-Dr. Carter: "How long do you anticipate needing the workplace modifications?"
+Jane Smith: "I'm grateful for the ongoing support during my recovery."
 
-Jane Smith: "I expect the modifications will be needed for at least six months as I gradually return to full capacity."
+Dr. Carter: "And how long might you need the workplace modifications?"
 
-Dr. Carter: "Has the Form 8 been submitted for your WSIB claim?"
+Jane Smith: "I expect to need them for at least six months as I recover."
 
-Jane Smith: "Yes, it has been submitted along with my application."
+Dr. Carter: "Has a Form 8 been submitted for your WSIB?"
 
-Dr. Carter: "Regarding your therapy, how often are your sessions?"
+Jane Smith: "Yes, it's been filed with my application."
 
-Jane Smith: "I'm attending physical therapy sessions twice a week."
+Dr. Carter: "How often are your therapy sessions?"
 
-Dr. Carter: "Thank you, Jane. We've updated your information accordingly."
+Jane Smith: "I'm attending twice a week."
+
+Dr. Carter: "That's noted, Jane. We'll make sure all this information is updated in your form."
+
+Physician's Note:
+
+As Jane's attending physician, I would like to add the following information to ensure all records are complete and up to date:
+
+Physician's Name (Printed): Dr. Alexander Carter
+Telephone: 555-987-6543
+Address: 123 Health Way, Springfield, NJ, 01112
+Fax: 555-987-6544
+Specialty: Orthopedics
+
