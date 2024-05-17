@@ -6,6 +6,7 @@ from fillpdf import fillpdfs
 
 from openai import AzureOpenAI
 from dotenv import load_dotenv
+import re
 
 def read_file(file_path):
     """Utility function to read file content."""
@@ -180,6 +181,10 @@ def main():
             line = file.readline()
             if not line:
                 break
+            line = re.sub(r'^[^a-zA-Z]+', '', line)
+            # to avoid the situation(incorrect format output from GPT): 
+            # "- Last name first in full>> Employee's Name (Last name first, in full): Smith, Jane",
+            # " // Last name first in full>> Employee's Name (Last name first, in full): Smith, Jane"
             part_name = line.strip().split('>>')[0]
             #get the question field name.
             part_answer = line.strip().split(':')[-1].lstrip()
@@ -201,8 +206,7 @@ def main():
                     #]options = get_field_options(reader, field_info)
                     #if options is not None and temp_dict[field_name] in options:
                     data_dict[field_name] = temp_dict[field_name]
-                    
- 
+
  #parse the diction & fill the questions one by one to avoid errors
     for key, value in data_dict.items():
         if "N/A" not in value:
@@ -210,7 +214,7 @@ def main():
                 fillpdfs.write_fillable_pdf(input_pdf_path, output_pdf_path, {key: value})
                 input_pdf_path = output_pdf_path
             except Exception as e:
-                print(f"Error filling field {key}: {str(e)}")
+                #print(f"Error filling field {key}: {str(e)}")
                 continue
 
 
